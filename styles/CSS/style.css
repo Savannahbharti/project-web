@@ -1,15 +1,5 @@
 /*@media(max-width:24em) {*/
 
-Body {
-    /*display: grid;
-        grid-template-columns: 10em 1fr 1fr;*/
-    font-family: "Nexa light", sans-serif;
-    background-image: url(https://d38kd5vqa6ilbw.cloudfront.net/nl/-/media/Images/Public/Backgrounds/Campaigns-NL/NL-week49-header.jpg?sc=0.666&amp;useCustomFunctions=1&amp;vs=1&amp;d=20171201T133830Z&amp;hash=3933DB3F334721528703500EF8D53FD87D412146);
-    background-repeat: no-repeat;
-    background-size: 50em;
-    box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
-}
-
 
 /*div:nth-child(1) {
     border-radius: 1.5em;
@@ -23,7 +13,6 @@ Body {
 }*/
 
 header > div {
-    display: inline-block;
     position: absolute;
     background-color: white;
     margin: 0;
@@ -34,45 +23,34 @@ header > div {
     height: 4em;
 }
 
-div:nth-child(2) {
-    box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
+header img {
+    margin: 1em 1em 0 1em;
+    width: 10.8em;
 }
 
-header img:nth-of-type(1) {
-    grid-column: 1;
-    margin-left: 1em;
-    margin-top: 1em;
-    width: 10em;
-}
-
-header nav {
-    grid-column: 1/2;
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 2em;
-    display: inline-block;
+    list-style: none;
+    color: #00d66c;
+}
+
+nav a {
+    font-family: "Nexa Bold", sans-serif;
+    color: #00d66c;
 }
 
 h1 {
-    grid-column: 1/3;
     margin: 0.25em 0 0 0.25em;
-    padding: 0.em;
     font-family: "Trebuchet MS", sans-serif;
     font-size: 3.7em;
     color: #00d66c;
 }
 
-nav ul {
-    list-style: none;
-    margin-top: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-nav a {
-    margin-top: 0;
-    font-family: "Nexa Bold", sans-serif;
-    color: #00d66c;
-    flex-direction: row;
+div:nth-child(2) {
+    box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
 }
 
 nav li:last-of-type {
@@ -92,29 +70,28 @@ form > button {
     box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
     border-radius: 3rem;
     border: none;
+    margin-bottom: 0.5em;
 }
 
 form {
-    margin-top: 40em;
-    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20em;
 }
 
 fieldset:nth-child(3),
 fieldset:nth-child(4),
 fieldset:nth-child(5) {
     padding: 2rem 2rem 1rem 2rem;
-    background-color: aliceblue;
+    background-color: lightgrey;
     border: none;
     align-items: center;
 }
 
 fieldset:nth-child(6) {
-    border-bottom-right-radius: 1em;
-    border-bottom-left-radius: 1em;
     padding: 2rem 2rem 1rem 2rem;
-    background-color: pink;
+    background-color: lightgreen;
     border: none;
-    align-items: center;
 }
 
 legend {
@@ -125,7 +102,7 @@ legend {
 }
 
 input {
-    font-size: inherit;
+    font-size: auto;
     margin-left: 0;
 }
 
@@ -138,16 +115,17 @@ label {
 
 h2 {
     font-family: "Trebuchet MS", sans-serif;
-    color: #2800a0;
+    color: #00d66c
 }
 
 h3 {
     display: flex;
     justify-content: flex-start;
     color: white;
-    font-size: 1.7em;
+    font-size: 1.4em;
     font-family: "Trebuchet MS", sans-serif;
     text-decoration: none;
+    margin: 0;
 }
 
 article > img {
@@ -160,18 +138,26 @@ a[href*="html"] {
     text-decoration: none;
 }
 
-footer ul {
+article {
+    display: inline-block;
+}
+
+article footer ul {
     margin-top: 2em;
     color: white;
     font-size: 0.9em;
     flex: 1 0 9em;
+    flex-direction: column;
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    padding-left: 1em;
 }
 
-footer ul li:last-of-type:before {
+article h3 {
+    font-size: 1.1em;
+    padding-left: 1em;
+}
+
+article footer ul li:last-of-type:before {
     content: "★★☆";
 }
 
@@ -179,41 +165,61 @@ footer ul li:nth-of-type(2n):before {
     content: "---";
 }
 
-section > div:first-of-type {
+section > div {
+    display: flex;
+    flex-direction: row;
     border-radius: 0.5em;
-    display: inline-block;
     flex-wrap: wrap;
-    text-align: center;
+    justify-content: space-around;
     padding: 0em 15em 0.9em 1.7em;
-    background-color: beige;
-    background-image: url(foto.jpg);
+    background-color: #00d66c;
 }
 
 article:nth-child(2),
 article:nth-child(3),
 article:nth-child(4),
 article:nth-child(5) {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
     border-radius: 0.9em;
     background: #2800a0;
-    background-image: url(foto.jpg);
-    background-size: 10em;
-    background-repeat: no-repeat;
 }
 
-article > button:nth-child(1n) {
+article img {
+    width: 10em;
+    border-top-right-radius: 0.9em;
+    border-top-left-radius: 0.9em;
+}
+
+button:last-of-type:hover {
+    background-color: lightcoral;
+}
+
+section button {
+    display: flex;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: #ff3268;
+    padding: 0.5em 2em 0.5em 2em;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    border-radius: 3rem;
+    border: none;
+    margin: 3em;
+}
+
+
+/*article > button:nth-child(1n) {
     display: flex;
     border-radius: 30em;
+    margin-top: em;
+    margin-right: 1em;
     padding: 1em;
-    height: auto;
+    height: 3em;
     width: 5rem;
     overflow: hidden;
     background-image: url(pijl.png);
-    background-size: 4.6em;
+    background-size: 1.3em;
     background-repeat: no-repeat;
-    background-color: green;
+    background-color: #00d66c;
     transition: .3s;
     text-indent: -9999px;
 }
@@ -242,7 +248,4 @@ button:nth-child(3n) {
     border-radius: 3rem;
     display: inline-block;
     border: none;
-}
-
-
-/*}*/
+}*/
