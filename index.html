@@ -8,20 +8,18 @@
     <link rel="stylesheet" href="styles/CSS/style.css"> </head>
 
 <body>
-    <header>
+    <header> <img src="styles/CSS/logo.png" alt=transavia>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mijnverhalen.html">Mijn verhalen</a></li>
+            </ul>
+        </nav>
         <div></div>
-        <div> <img src="styles/CSS/logo.png" alt=transavia>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="mijnverhalen.html">Mijn verhalen</a></li>
-                </ul>
-            </nav>
-            <h1>99 Verhalen voor op reis</h1> </div>
-    </header>
+        <h1>99 Verhalen voor op reis</h1> </header>
     <form>
-        <button id="filter"> Filter</button>
         <button id="Sorteer"> Sorteer</button>
+        <button id="filter"> Filter</button>
         <fieldset>
             <legend>Emotie</legend>
             <label>
@@ -31,14 +29,14 @@
             <label>
                 <input type="checkbox">Vrolijk </label>
             <label>
-                <input type="checkbox"> Tevreden</label>
+                <input type="checkbox">Tevreden</label>
         </fieldset>
         <fieldset>
             <legend>Vertel perspectief</legend>
             <label>
                 <input type="checkbox">Auteur- perspectief </label>
             <label>
-                <input type="checkbox">Hij / zij - perspectief </label>
+                <input type="checkbox">Hij/zij - perspectief </label>
             <label>
                 <input type="checkbox">Ik-perspectief </label>
         </fieldset>
@@ -49,7 +47,7 @@
             <label>
                 <input type="checkbox">10 min </label>
             <label>
-                <input type="checkbox">15 min of langer </label>
+                <input type="checkbox">15 min +</label>
         </fieldset>
         <fieldset>
             <legend>Waardering</legend>
@@ -58,30 +56,31 @@
             <label>
                 <input type="radio" name="waardering">Comments </label>
         </fieldset>
+        <div>
+            <button>Zoek</button>
+        </div>
     </form>
     <section>
         <h2> Meest bekeken verhalen</h2>
-        <div>
-            <article>
-                <h3> Paranoia 75</h3> <a href="paranoia.html">
-                Lees dit verhaal </a> </article>
-        </div>
-        <div>
-            <article>
-                <h3> Kinderboek 57</h3> <a href="paranoia.html">
-                Lees dit verhaal </a> </article>
-        </div>
+        <article>
+            <h3> Paranoia 75</h3>
+            <a href="paranoia.html"> </a>
+        </article>
+        <article>
+            <h3> Kinderboek 57</h3>
+            <a href="paranoia.html"> </a>
+        </article>
     </section>
     <section>
-        <h2>Bekijk alle verhalen</h2>
+        <h2>Bekijk alle verhalen!</h2>
         <article>
             <a href="verliefd.html"> <img src="styles/CSS/foto.jpg" alt="foto">
                 <h3> 01 Verliefd</h3> </a>
             <footer>
                 <ul>
-                    <li> 10 Comments </li>
-                    <li> 15 minuten </li>
-                    <li> 2 sterren </li>
+                    <li> > 10 Comments </li>
+                    <li> > 15 minuten </li>
+                    <li> > 2 sterren </li>
                 </ul>
             </footer>
         </article>
@@ -90,9 +89,9 @@
                 <h3>08 Haiku</h3> </a>
             <footer>
                 <ul>
-                    <li>10 Comments</li>
-                    <li>15 minuten</li>
-                    <li> 2 sterren</li>
+                    <li> > 10 Comments</li>
+                    <li> > 15 minuten</li>
+                    <li> > 2 sterren</li>
                 </ul>
             </footer>
         </article>
@@ -101,9 +100,9 @@
                 <h3>83 ongeluk</h3> </a>
             <footer>
                 <ul>
-                    <li> 10 Comments </li>
-                    <li> 15 minuten </li>
-                    <li> 2 sterren </li>
+                    <li> > 10 Comments </li>
+                    <li> > 15 minuten </li>
+                    <li> > 2 sterren </li>
                 </ul>
             </footer>
         </article>
@@ -112,13 +111,12 @@
                 <h3>75 kinderboek</h3> </a>
             <footer>
                 <ul>
-                    <li> 10 Comments </li>
-                    <li> 15 minuten </li>
-                    <li> 2 sterren </li>
+                    <li> > 10 Comments </li>
+                    <li> > 15 minuten </li>
+                    <li> > 2 sterren </li>
                 </ul>
             </footer>
         </article>
-        <button id="meer"> Toon meer</button>
     </section>
 </body>
 
