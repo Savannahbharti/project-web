@@ -1,19 +1,17 @@
-/*@media(max-width:24em) {*/
+/*@media(max-width:50em) {*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", sans-serif;
+}
 
 
-/*div:nth-child(1) {
-    border-radius: 1.5em;
-    background-color: white;
-    width: 9em;
-    height: 9em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 25em;
-    transform: rotate(45deg);
-}*/
+/* Balk navigatie menu*/
 
 header > div {
     position: absolute;
+    z-index: -1;
     background-color: white;
     margin: 0;
     top: 0;
@@ -21,18 +19,31 @@ header > div {
     left: 0;
     right: 0;
     height: 4em;
+    box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
 }
+
+
+/* Header logo transavia */
 
 header img {
-    margin: 1em 1em 0 1em;
-    width: 10.8em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 1em;
+    margin-left: 1em;
+    float: left;
+    width: 9em;
 }
 
+
+/* navigatie menu */
+
 nav ul {
+    margin-top: 1em;
+    margin-left: 7em;
+    font-size: 1.2em;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2em;
+    justify-content: flex-start;
     list-style: none;
     color: #00d66c;
 }
@@ -42,210 +53,197 @@ nav a {
     color: #00d66c;
 }
 
+nav li:last-of-type {
+    margin-left: 1.5em;
+}
+
+
+/* titel home pagina */
+
 h1 {
-    margin: 0.25em 0 0 0.25em;
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 3.7em;
+    padding: 1em;
+    margin: 1em 0 0 0.25em;
+    font-family: "Nexa Bold", sans-serif;
+    font-size: 4em;
     color: #00d66c;
 }
 
-div:nth-child(2) {
-    box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
-}
 
-nav li:last-of-type {
-    margin-left: 4em;
-}
+/* formulier, filteren en sorten */
 
 form > button:hover {
     background-color: lightcoral;
 }
 
 form > button {
+    float: right;
     font-family: "Trebuchet MS", sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
     color: white;
     background-color: #ff3268;
-    padding: 0.5em 2em 0.5em 2em;
+    border-radius: 3em;
+    border: none;
     box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
-    border-radius: 3rem;
+    padding: 0.5em 2em 0.5em 2em;
+    margin: 0.5em 0.5em 0.5em 0.5em;
+}
+
+form {
+    border-radius: 0.9em;
+    border: 0.05em solid lightgrey;
+}
+
+form >div {
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 0.9em 0.9em;
+    background: #00d66c;
+    padding: 1.2em;
+    box-shadow: inset 0 -0.1875em 0.0625em grey;
+}
+
+div > button {
+    display: flex;
+    justify-content: center;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.3em;
+    padding: 0.5em 2em 0.5em 2em;
+    box-shadow: inset 0 -0.1875em 0.0625em grey;
+    border-radius: 3em;
     border: none;
     margin-bottom: 0.5em;
 }
 
-form {
+fieldset {
+    margin-top: 1em;
     display: flex;
-    flex-direction: row;
-    margin-top: 20em;
-}
-
-fieldset:nth-child(3),
-fieldset:nth-child(4),
-fieldset:nth-child(5) {
-    padding: 2rem 2rem 1rem 2rem;
-    background-color: lightgrey;
-    border: none;
-    align-items: center;
-}
-
-fieldset:nth-child(6) {
-    padding: 2rem 2rem 1rem 2rem;
-    background-color: lightgreen;
     border: none;
 }
 
 legend {
-    position: absolute;
-    left: -666em;
-    color: #2800a0;
     font-family: "Nexa Bold", sans-serif;
-}
-
-input {
-    font-size: auto;
-    margin-left: 0;
+    color: black;
+    font-size: 1.3em;
 }
 
 label {
-    line-height: 0;
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: "Trebuchet MS", sans-serif;
     color: grey;
 }
 
+input {
+    width: 0.3em;
+    height: 0.3em;
+    font-size: 5em;
+}
+
+
+/* tussenkoppen */
+
 h2 {
-    font-family: "Trebuchet MS", sans-serif;
-    color: #00d66c
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: "Nexa Bold", sans-serif;
+    font-size: 2em;
+    color: #00d66c;
 }
 
 h3 {
-    display: flex;
-    justify-content: flex-start;
     color: white;
     font-size: 1.4em;
-    font-family: "Trebuchet MS", sans-serif;
+    font-family: "Nexa Bold", sans-serif;
     text-decoration: none;
     margin: 0;
 }
 
-article > img {
-    display: flex;
-    width: 30%;
-    height: 30%;
-}
-
 a[href*="html"] {
+    font-family: "Nexa Bold", sans-serif;
     text-decoration: none;
 }
 
-article {
-    display: inline-block;
-}
-
 article footer ul {
-    margin-top: 2em;
-    color: white;
-    font-size: 0.9em;
-    flex: 1 0 9em;
-    flex-direction: column;
+    margin-left: 0.5em;
+    font-family: "Nexa Bold", sans-serif;
+    font-size: 0.8em;
     list-style: none;
-    padding-left: 1em;
+    line-height: 1.5em;
+    word-spacing: 0.2em;
 }
 
 article h3 {
-    font-size: 1.1em;
-    padding-left: 1em;
-}
-
-article footer ul li:last-of-type:before {
-    content: "★★☆";
-}
-
-footer ul li:nth-of-type(2n):before {
-    content: "---";
-}
-
-section > div {
+    margin-top: 0.5em;
     display: flex;
-    flex-direction: row;
-    border-radius: 0.5em;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0em 15em 0.9em 1.7em;
-    background-color: #00d66c;
+    justify-content: center;
+    color: #2800a0;
+    font-size: 1.2em;
 }
+
+
+/* H2 Meest bekeken verhalen */
+
+section:first-of-type > h2 {
+    font-size: 3.5em;
+    color: #2800A0;
+}
+
+
+/* Twee meest bekeken verhalen */
+
+section:first-of-type > article {
+    border: none;
+    background-color: #fcf9f7;
+    margin: 0.4em;
+    padding: 1.5em;
+}
+
+
+/* achtergrond kleur meest bekeken verhalen */
+
+section:first-of-type {
+    background-color: #f3e5d8;
+    padding: 2em;
+}
+
+
+/* Afbeeldingen bij de verhalen */
+
+article img {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 0.9em;
+    border-top-left-radius: 0.9em;
+}
+
+
+/* 4 kolommen verhalen */
 
 article:nth-child(2),
 article:nth-child(3),
 article:nth-child(4),
 article:nth-child(5) {
     border-radius: 0.9em;
-    background: #2800a0;
+    border: 0.05em solid lightgrey;
+    border-bottom-width: thin;
+    width: 35%;
+    margin: 0.8em;
+    width: calc(35%-2em);
+    position: relative;
 }
 
-article img {
-    width: 10em;
-    border-top-right-radius: 0.9em;
-    border-top-left-radius: 0.9em;
-}
-
-button:last-of-type:hover {
-    background-color: lightcoral;
-}
-
-section button {
+section {
     display: flex;
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 1rem;
-    color: white;
-    background-color: #ff3268;
-    padding: 0.5em 2em 0.5em 2em;
-    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
-    border-radius: 3rem;
-    border: none;
-    margin: 3em;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
-/*article > button:nth-child(1n) {
-    display: flex;
-    border-radius: 30em;
-    margin-top: em;
-    margin-right: 1em;
-    padding: 1em;
-    height: 3em;
-    width: 5rem;
-    overflow: hidden;
-    background-image: url(pijl.png);
-    background-size: 1.3em;
-    background-repeat: no-repeat;
-    background-color: #00d66c;
-    transition: .3s;
-    text-indent: -9999px;
-}
+/* Mijn lijst icoontjee */
 
-article > button:nth-child(2) {
-    display: flex;
-    height: 4rem;
-    width: 5.6rem;
-    overflow: hidden;
-    background-image: url(uit.png);
-    background-size: 10em;
-    background-repeat: no-repeat;
-    transition: .3s;
-    text-indent: -9999px;
+div img {
+    border-radius: 0;
+    margin-left: 6.5em;
+    width: 30%;
+    position: absolute;
 }
-
-button:nth-child(3n) {
-    margin-left: 7em;
-    margin-top: 0.8em;
-    font-family: "Trebuchet MS", sans-serif;
-    padding: 0.5em 2em 0.5em 2em;
-    font-size: 1rem;
-    color: white;
-    background-color: #2800a0;
-    box-shadow: inset 0 -0.1875em 0.0625em #5452af;
-    border-radius: 3rem;
-    display: inline-block;
-    border: none;
-}*/
