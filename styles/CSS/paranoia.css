@@ -1,0 +1,106 @@
+                                                                @media(max-width:100em) {
+                                                                html {
+                                                                    overflow-x: hidden;
+                                                                }
+                                                                body {
+                                                                    background-color: black;
+                                                                    margin: 0;
+                                                                    padding: 0;
+                                                                    font-family: "Trebuchet MS", sans-serif;
+                                                                }
+                                                                /* Balk navigatie menu*/
+                                                                header > div {
+                                                                    position: absolute;
+                                                                    z-index: -1;
+                                                                    background-color: white;
+                                                                    margin: 0;
+                                                                    top: 0;
+                                                                    bottom: 0;
+                                                                    left: 0;
+                                                                    right: 0;
+                                                                    height: 4em;
+                                                                    box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
+                                                                }
+                                                                /* Header logo transavia */
+                                                                header img {
+                                                                    position: absolute;
+                                                                    top: 0;
+                                                                    left: 0;
+                                                                    margin-top: 1.4em;
+                                                                    margin-left: 1em;
+                                                                    float: left;
+                                                                    width: 7.5em;
+                                                                }
+                                                                /* navigatie menu */
+                                                                nav ul {
+                                                                    margin-top: 1.59em;
+                                                                    margin-left: 7em;
+                                                                    font-size: 1em;
+                                                                    display: flex;
+                                                                    justify-content: flex-start;
+                                                                    list-style: none;
+                                                                    color: #00d66c;
+                                                                    width: 100%;
+                                                                }
+                                                                nav a {
+                                                                    font-family: "Nexa Bold", sans-serif;
+                                                                    color: #00d66c;
+                                                                }
+                                                                nav li:last-of-type {
+                                                                    margin-left: 1.5em;
+                                                                }
+                                                                /* titel home pagina */
+                                                                h1 {
+                                                                    display: flex;
+                                                                    padding: 0.5em;
+                                                                    font-family: "Nexa Bold", sans-serif;
+                                                                    font-size: 4em;
+                                                                    color: white;
+                                                                }
+                                                                h2 {
+                                                                    display: flex;
+                                                                    font-family: "Nexa Bold", sans-serif;
+                                                                    font-size: 1em;
+                                                                    color: white;
+                                                                }
+                                                                textarea {
+                                                                    color: lightgrey;
+                                                                    font-family: "Nexa Bold";
+                                                                    font-size: 1rem;
+                                                                    border: none;
+                                                                    width: 70%;
+                                                                    height: 7em;
+                                                                    border-radius: 0.75rem;
+                                                                    padding: 0.5em;
+                                                                    resize: none;
+                                                                }
+                                                                section > div {
+                                                                    margin-top: 0;
+                                                                    background-color: #2800A0;
+                                                                }
+                                                                main > img {
+                                                                    width: 100%;
+                                                                    padding: 0rem;
+                                                                    background-color: white;
+                                                                }
+                                                                .image {
+                                                                    width: 100%;
+                                                                    position: relative;
+                                                                    overflow: hidden;
+                                                                    background-color: black;
+                                                                }
+                                                                .image:before {
+                                                                    content: '';
+                                                                    position: absolute;
+                                                                    width: 15em;
+                                                                    height: 15em;
+                                                                    bottom: 1em;
+                                                                    height: 150%;
+                                                                    left: 0;
+                                                                    right: 0;
+                                                                    margin-left: 1em;
+                                                                    margin-bottom: 6em;
+                                                                    border-radius: 0.2em;
+                                                                    box-shadow: 0 0 0 50em white;
+                                                                    transform: rotate(45deg);
+                                                                }
