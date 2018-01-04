@@ -143,24 +143,26 @@
         display: flex;
         justify-content: center;
         color: #2800a0;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     /* H2 Meest bekeken verhalen */
     section:first-of-type > h2 {
-        font-size: 3.5em;
+        display: flex;
+        font-size: 2.5em;
         color: #2800A0;
     }
     /* Twee meest bekeken verhalen */
     section:first-of-type > article {
+        position: relative;
         border: none;
         background-color: #fcf9f7;
         margin: 0.4em;
-        padding: 1.5em;
+        padding: 0.5em;
     }
     /* achtergrond kleur meest bekeken verhalen */
     section:first-of-type {
         background-color: #f3e5d8;
-        padding: 2em;
+        padding: 1.5em;
     }
     /* Afbeeldingen bij de verhalen */
     article img {
@@ -190,7 +192,7 @@
     /* Mijn lijst icoontjee */
     div img {
         border-radius: 0;
-        margin-left: 6.5em;
+        margin-left: 6em;
         width: 30%;
         position: absolute;
     }

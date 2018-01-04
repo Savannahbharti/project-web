@@ -1,104 +1,111 @@
-        @media(max-width:45em) {
-        html {
-            overflow-x: hidden;
-        }
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: "Trebuchet MS", sans-serif;
-        }
-        /* Balk navigatie menu*/
-        header > div {
-            position: absolute;
-            z-index: -1;
-            background-color: white;
-            margin: 0;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 4em;
-            box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
-        }
-        /* Header logo transavia */
-        header img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            margin-top: 1.4em;
-            margin-left: 1em;
-            float: left;
-            width: 7.5em;
-        }
-        /* navigatie menu */
-        nav ul {
-            list-style: none;
-            margin-top: 1em;
-            margin-left: 7em;
-            font-size: 1.2em;
-            display: flex;
-            justify-content: flex-start;
-            color: #00d66c;
-        }
-        nav a {
-            font-family: "Nexa Bold", sans-serif;
-            color: #00d66c;
-        }
-        nav li:last-of-type {
-            margin-left: 1.5em;
-        }
-        /* titel home pagina */
-        h1 {
-            margin: 1em 0 0 0.25em;
-            font-family: "Nexa Bold", sans-serif;
-            font-size: 4em;
-            color: #00d66c;
-        }
-        /* Jouw downloads & Mijn lijst titel */
-        h2 {
-            width: 100%;
-            color: #00d66c;
-        }
-        /* Jouw downloads titel */
-        section:first-of-type > h2 {
-            color: #2800A0;
-        }
-        /* Jouw downloads & Mijn lijst sections */
-        section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-        }
-        /* downloads */
-        article:nth-child(2),
-        article:nth-child(3),
-        article:nth-child(4),
-        article:nth-child(5) {
-            border-radius: 0.9em;
-            border: 0.05em solid lightgrey;
-            border-bottom-width: thin;
-            width: 25%;
-            margin: 0.8em;
-            width: calc(25%-2em);
-            position: relative;
-        }
-        article img {
-            width: 100%;
-            height: auto;
-            border-top-right-radius: 0.9em;
-            border-top-left-radius: 0.9em;
-        }
-        a[href*="html"] {
-            position: relative;
-            font-family: "Nexa Bold", sans-serif;
-            text-decoration: none;
-            color: #00d66c;
-            font-size: 0.8em;
-        }
-        footer ul {
-            font-size: 0.8em;
-            position: relative;
-            list-style: none;
-            display: flex;
-            justify-content: center;
-        }
+@media(max-width:45em) {
+    html {
+        overflow-x: hidden;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Trebuchet MS", sans-serif;
+    }
+    /* Balk navigatie menu*/
+    header > div {
+        position: absolute;
+        z-index: -1;
+        background-color: white;
+        margin: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 4em;
+        box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
+    }
+    /* Header logo transavia */
+    header img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 1.4em;
+        margin-left: 1em;
+        float: left;
+        width: 7.5em;
+    }
+    /* navigatie menu */
+    nav ul {
+        margin-top: 1.59em;
+        margin-left: 7em;
+        font-size: 1em;
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        color: #00d66c;
+        width: 100%;
+    }
+    nav a {
+        font-family: "Nexa Bold", sans-serif;
+        color: #00d66c;
+    }
+    nav li:last-of-type {
+        margin-left: 1.5em;
+    }
+    /* titel home pagina */
+    h1 {
+        margin-left: 0.5em;
+        margin-top: 1.5em;
+        padding: 0.2em;
+        font-family: "Nexa Bold", sans-serif;
+        font-size: 2em;
+        color: #00d66c;
+    }
+    /* Jouw downloads & Mijn lijst titel */
+    h2 {
+        display: flex;
+        margin-left: 0.5em;
+        width: 100%;
+        color: #00d66c;
+    }
+    h3 {
+        margin-top: 0.5em;
+        display: flex;
+        justify-content: center;
+        font-size: 0.8em;
+        color: gray;
+    }
+    /* Jouw downloads titel */
+    section:first-of-type > h2 {
+        color: #2800A0;
+    }
+    /* Jouw downloads & Mijn lijst sections */
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    /* downloads */
+    article:nth-child(2),
+    article:nth-child(3),
+    article:nth-child(4),
+    article:nth-child(5) {
+        background-color: white;
+        border-radius: 0.9em;
+        border: thin solid lightgrey;
+        width: 25%;
+        margin: 0.8em;
+        margin-top: 0;
+        width: calc(25%-2em);
+        position: relative;
+    }
+    article img {
+        width: 100%;
+        height: auto;
+        border-top-right-radius: 0.9em;
+        border-top-left-radius: 0.9em;
+    }
+    section:nth-of-type(1) {
+        background-color: #f3e5d8;
+    }
+    section:nth-of-type(2) {
+        background-color: white;
+        border-bottom: thin solid lightgrey;
+    }
+}

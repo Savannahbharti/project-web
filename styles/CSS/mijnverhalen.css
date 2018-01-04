@@ -1,115 +1,119 @@
-                @media(max-width:45em) {
-                html {
-                    overflow-x: hidden;
-                }
-                body {
-                    margin: 0;
-                    padding: 0;
-                    font-family: "Trebuchet MS", sans-serif;
-                }
-                /* Balk navigatie menu*/
-                header > div {
-                    position: absolute;
-                    z-index: -1;
-                    background-color: white;
-                    margin: 0;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    height: 4em;
-                    box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
-                }
-                /* Header logo transavia */
-                header img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    margin-top: 1.4em;
-                    margin-left: 1em;
-                    float: left;
-                    width: 7.5em;
-                }
-                /* navigatie menu */
-                nav ul {
-                    margin-top: 1.5em;
-                    margin-left: 7em;
-                    font-size: 1em;
-                    display: flex;
-                    justify-content: flex-start;
-                    list-style: none;
-                    color: #00d66c;
-                    width: 100%;
-                }
-                nav a {
-                    font-family: "Nexa Bold", sans-serif;
-                    color: #00d66c;
-                }
-                nav li:last-of-type {
-                    margin-left: 1.5em;
-                }
-                /* titel home pagina */
-                h1 {
-                    margin: 1em 0 0 0.25em;
-                    font-family: "Nexa Bold", sans-serif;
-                    font-size: 4em;
-                    color: #00d66c;
-                }
-                /* Aanmeld formulier */
-                form {
-                    margin-top: 4em;
-                    border-radius: 0.9em;
-                    border: 0.05em solid lightgrey;
-                }
-                fieldset {
-                    margin-top: 1em;
-                    display: flex;
-                    border: none;
-                }
-                /* Titel aanmeld formulier */
-                legend {
-                    font-family: "Nexa Bold", sans-serif;
-                    color: #00d66c;
-                    font-size: 1.3em;
-                }
-                /* Invuld veld */
-                label {
-                    position: absolute width: 100%;
-                    margin-top: 0.6em;
-                    font-size: 0.em;
-                    font-family: "Nexa Bold", sans-serif;
-                }
-                input {
-                    border-radius: 0.1em;
-                    width: 4.2em;
-                    height: 0.3em;
-                    font-size: 5em;
-                }
-                /* Aanmeld button */
-                form button {
-                    float: right;
-                    font-family: "Trebuchet MS", sans-serif;
-                    font-size: 1em;
-                    color: white;
-                    background-color: #ff3268;
-                    border-radius: 3em;
-                    border: none;
-                    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
-                    padding: 0.5em 2em 0.5em 2em;
-                    margin: 0.5em 0.5em 0.5em 0.5em;
-                }
-                /* Jouw downloads & Mijn lijst titel */
-                h2 {
-                    width: 100%;
-                    color: #00d66c;
-                }
-                /* Jouw downloads titel */
-                section:first-of-type > h2 {
-                    color: #2800A0;
-                }
-                /* Jouw downloads & Mijn lijst sections */
-                section {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: flex-start;
-                }
+            @media(max-width:45em) {
+            html {
+                overflow-x: hidden;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: "Trebuchet MS", sans-serif;
+            }
+            /* Balk navigatie menu*/
+            header > div {
+                position: absolute;
+                z-index: -1;
+                background-color: white;
+                margin: 0;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 4em;
+                box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
+            }
+            /* Header logo transavia */
+            header img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-top: 1.4em;
+                margin-left: 1em;
+                float: left;
+                width: 7.5em;
+            }
+            /* navigatie menu */
+            nav ul {
+                margin-top: 1.5em;
+                margin-left: 7em;
+                font-size: 1em;
+                display: flex;
+                justify-content: flex-start;
+                list-style: none;
+                color: #00d66c;
+                width: 100%;
+            }
+            nav a {
+                font-family: "Nexa Bold", sans-serif;
+                color: #00d66c;
+            }
+            nav li:last-of-type {
+                margin-left: 1.5em;
+            }
+            /* titel home pagina */
+            h1 {
+                margin: 1em 0 0 0.25em;
+                font-family: "Nexa Bold", sans-serif;
+                font-size: 4em;
+                color: #00d66c;
+            }
+            /* Aanmeld formulier */
+            form {
+                margin-top: 4em;
+                border-radius: 0.9em;
+                border: 0.05em solid lightgrey;
+            }
+            fieldset {
+                margin-top: 1em;
+                border: none;
+            }
+            /* Titel aanmeld formulier */
+            legend {
+                font-family: "Nexa Bold", sans-serif;
+                color: #00d66c;
+                font-size: 1.3em;
+            }
+            /* Invuld veld */
+            label {
+                font-family: "Nexa Bold", sans-serif;
+            }
+            input {
+                border-radius: 0.1em;
+                width: 100%;
+                height: 0.3em;
+                font-size: 5em;
+            }
+            /* Aanmeld button */
+            form button {
+                float: right;
+                font-family: "Trebuchet MS", sans-serif;
+                font-size: 1em;
+                color: white;
+                background-color: #ff3268;
+                border-radius: 3em;
+                border: none;
+                box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+                padding: 0.5em 2em 0.5em 2em;
+                margin: 0.5em 0.5em 0.5em 0.5em;
+            }
+            /* Jouw downloads & Mijn lijst titel */
+            h2 {
+                display: flex;
+                margin-left: 0.5em;
+                width: 100%;
+                color: #00d66c;
+            }
+            /* Jouw downloads titel */
+            section:first-of-type > h2 {
+                color: #2800A0;
+            }
+            /* Jouw downloads & Mijn lijst sections + paragraaf */
+            section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            p {
+                font-size: 0.9em;
+                display: flex;
+                margin-left: 0.6em;
+                margin-top: 0;
+            }
