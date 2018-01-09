@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <meta name="viewport" content="widtd=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/CSS/style.css"> </head>
+    <link rel="stylesheet" href="styles/CSS/style.css">
+    <script src="js/index.js"></script>
+</head>
 
 <body>
-    <header> <img src="styles/CSS/logo.png" alt=transavia>
+    <header>
+        <a href="index.html"><img src="styles/CSS/logo.png" alt=transavia></a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="mijnverhalen.html">Mijn verhalen</a></li>
             </ul>
         </nav>
         <div></div>
-        <h1>99 Verhalen voor op reis</h1> </header>
+        <h1>99 verhalen om mee te reizen</h1> </header>
+    <button id="aan">Filter </button>
     <form>
-        <button id="Sorteer"> Sorteer</button>
-        <button id="filter"> Filter</button>
         <fieldset>
             <legend>Emotie</legend>
             <label>
@@ -63,76 +64,93 @@
     <section>
         <h2> Meest bekeken verhalen</h2>
         <article>
-            <h3> Paranoia</h3>
-            <a href="paranoia.html"> </a>
+            <a href="paranoia.html">
+                <h3> Paranoia</h3> </a>
         </article>
         <article>
-            <h3> Kinderboek</h3>
-            <a href="paranoia.html"> </a>
+            <a href="paranoia.html">
+                <h3> Kinderboek</h3> </a>
         </article>
     </section>
     <section>
         <h2>Bekijk alle verhalen!</h2>
         <article>
-            <div> <img src="styles/CSS/aan.png" alt="mijnlijst">
-                <a href="#"></a>
-            </div>
             <a href="neerslachtig.html"> <img src="styles/CSS/neerslachtig.jpg" alt="neerslachtig">
                 <h3> Neerslachtig</h3> </a>
             <footer>
                 <ul>
-                    <li> > 10 Comments </li>
-                    <li> > 15 minuten </li>
-                    <li> > 2 sterren </li>
+                    <li>10 </li>
+                    <li>15 </li>
+                    <li> 2 </li>
                 </ul>
+                <div><img src="styles/CSS/download.png" alt="download">
+                    <a href="mijnverhaleningelogd.html"></a> <img src="styles/CSS/lijst.png" alt="mijnlijst">
+                    <a href="mijnverhaleningelogd.html"></a>
+                </div>
             </footer>
         </article>
         <article>
-            <div> <img src="styles/CSS/aan.png" alt="mijnlijst">
-                <a href="#"></a>
-            </div> <img src="styles/CSS/paranoia.png" alt="foto">
-            <a href="kinderboek.html">
+            <a href="kinderboek.html"><img src="styles/CSS/kinderboek.jpg" alt="ongeluk">
                 <h3>Kinderboek</h3> </a>
             <footer>
                 <ul>
-                    <li> > 10 Comments </li>
-                    <li> > 15 minuten </li>
-                    <li> > 2 sterren </li>
+                    <li> 10 </li>
+                    <li> 15 </li>
+                    <li> 2 </li>
                 </ul>
+                <div><img src="styles/CSS/download.png" alt="download">
+                    <a href="mijnverhaleningelogd.html"></a> <img src="styles/CSS/lijst.png" alt="mijnlijst">
+                    <a href="mijnverhaleningelogd.html"></a>
+                </div>
             </footer>
         </article>
         <article>
-            <div> <img src="styles/CSS/uit.png" alt="mijnlijst">
-                <a href=""></a>
-            </div><img src="styles/CSS/paranoia.png" alt="foto">
-            <a href="paranoia.html">
+            <a href="paranoia.html"> <img src="styles/CSS/paranoia.jpg" alt="ongeluk">
                 <h3>Paranoia</h3> </a>
             <footer>
                 <ul>
-                    <li> > 10 Comments </li>
-                    <li> > 15 minuten </li>
-                    <li> > 2 sterren </li>
+                    <li> 10 </li>
+                    <li> 7 </li>
+                    <li> 2</li>
                 </ul>
+                <div><img src="styles/CSS/download.png" alt="download">
+                    <a href="mijnverhaleningelogd.html"></a> <img src="styles/CSS/lijst.png" alt="mijnlijst">
+                    <a href="mijnverhaleningelogd.html"></a>
+                </div>
             </footer>
-            <div> <img src="styles/CSS/download.png" alt="mijnlijst">
-                <a href=""></a>
-            </div>
         </article>
         <article>
-            <div> <img src="styles/CSS/aan.png" alt="mijnlijst">
-                <a href="#"></a>
-            </div><img src="styles/CSS/ongeluk.jpg" alt="ongeluk">
-            <a href="paranoia.html">
+            <a href="ongeluk.html"> <img src="styles/CSS/ongeluk.jpg" alt="ongeluk">
                 <h3>Ongeluk</h3> </a>
             <footer>
                 <ul>
-                    <li> > 10 Comments</li>
-                    <li> > 15 minuten</li>
-                    <li> > 2 sterren</li>
+                    <li> 10 </li>
+                    <li>15 </li>
+                    <li> 2 </li>
                 </ul>
+                <div><img src="styles/CSS/download.png" alt="download">
+                    <a href="mijnverhaleningelogd.html"></a> <img src="styles/CSS/lijst.png" alt="mijnlijst">
+                    <a href="mijnverhaleningelogd.html"></a>
+                </div>
             </footer>
         </article>
     </section>
+    <section>
+        <footer>
+            <h2>Zoek een verhaal</h2>
+            <input type="text" />
+            <button>Zoek</button>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Whatsapp</li>
+            </ul>
+        </footer>
+    </section>
+    <footer>
+        <p> All rights reserved copyright 2018 © Transavia </p>
+    </footer>
 </body>
 
 </html>

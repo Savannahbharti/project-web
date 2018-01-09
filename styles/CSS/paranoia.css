@@ -1,152 +1,312 @@
-                @media(max-width:100em) {
-                html {
-                    overflow-x: hidden;
-                }
-                body {
-                    background-color: black;
-                    margin: 0;
-                    padding: 0;
-                    font-family: "Trebuchet MS", sans-serif;
-                }
-                /* Balk navigatie menu*/
-                header > div {
-                    position: absolute;
-                    z-index: -1;
-                    background-color: white;
-                    margin: 0;
-                    top: 0;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    height: 4em;
-                    box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
-                }
-                /* Header logo transavia */
-                header img {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    margin-top: 1.4em;
-                    margin-left: 1em;
-                    float: left;
-                    width: 7.5em;
-                }
-                /* navigatie menu */
-                nav ul {
-                    margin-top: 1.59em;
-                    margin-left: 7em;
-                    font-size: 1em;
-                    display: flex;
-                    justify-content: flex-start;
-                    list-style: none;
-                    color: #00d66c;
-                    width: 100%;
-                }
-                nav a {
-                    font-family: "Nexa Bold", sans-serif;
-                    color: #00d66c;
-                }
-                nav li:last-of-type {
-                    margin-left: 1.5em;
-                }
-                /* titel home pagina */
-                h1 {
-                    padding: 0.2em;
-                    margin: 0.3em;
-                    display: flex;
-                    justify-content: center;
-                    font-family: "Nexa Bold", sans-serif;
-                    font-size: 3em;
-                    color: white;
-                }
-                /* vormgeving driehoek */
-                .image {
-                    width: 100%;
-                    position: relative;
-                    overflow: hidden;
-                    background-color: black;
-                }
-                .image:before {
-                    content: '';
-                    position: absolute;
-                    width: 15em;
-                    height: 15em;
-                    bottom: 1em;
-                    height: 150%;
-                    left: 0;
-                    right: 0;
-                    margin-left: 1em;
-                    margin-bottom: 6em;
-                    border-radius: 0.2em;
-                    box-shadow: 0 0 0 50em white;
-                    transform: rotate(45deg);
-                }
-                /* reageer field*/
-                h3 {
-                    font-size: 1.5em;
-                    padding: 1em;
-                    color: beige;
-                    display: flex;
-                    justify-content: center;
-                }
-                p {
-                    margin: 0.2em;
-                    display: flex;
-                    justify-content: center;
-                    font-family: "Nexa Bold", sans-serif;
-                    font-size: 1em;
-                    color: white;
-                }
-                textarea {
-                    margin-left: 2.3em;
-                    color: lightgrey;
-                    font-family: "Trebuchet MS", sans-serif;
-                    font-size: 1rem;
-                    border: none;
-                    width: 70%;
-                    height: 7em;
-                    border-radius: 0.75rem;
-                    resize: none;
-                }
-                button {
-                    font-family: "Trebuchet MS", sans-serif;
-                    font-size: 1em;
-                    color: white;
-                    background-color: #ff3268;
-                    border-radius: 3em;
-                    border: none;
-                    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
-                    padding: 0.5em 2em 0.5em 2em;
-                    margin: 0.5em 0.5em 0.5em 0.5em;
-                }
-                section:last-child {
-                    background-color: #2800A0;
-                }
-                /* verhaal afbeelding*/
-                main > img {
-                    margin-top: 0;
-                    width: 100%;
-                    background-color: white;
-                }
-                /* geef sterren BRON:https://www.cssscript.com/pure-css-star-rating-component */
-                input {
-                    margin-left: 1.6em;
-                    overflow: hidden;
-                    position: clip: rect(0.5em 0.5em 0.5em 0.5em);
-                    clip: rect(0.5em, 0.5em, 0.5em, 0.5em);
-                    opacity: 0;
-                }
-                label:before {
-                    content: "\2605";
-                    font-size: 2em;
-                    color: white;
-                }
-                input:checked ~ label:before {
-                    color: #FFC107;
-                }
-                label:hover ~ label:before {
-                    color: #ffdb70;
-                }
-                label:hover:before {
-                    color: #FFC107;
-                }
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+
+/* Balk navigatie menu*/
+
+header > div {
+    position: absolute;
+    z-index: -1;
+    background-color: white;
+    margin: 9;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4em;
+    box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
+}
+
+
+/* Header logo transavia */
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 1.4em;
+    margin-left: 1em;
+    float: left;
+    width: 7.5em;
+}
+
+
+/* navigatie menu */
+
+nav ul {
+    margin-top: 1.59em;
+    margin-left: 7em;
+    font-size: 1em;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    color: #00d66c;
+    width: 100%;
+}
+
+nav a {
+    font-family: "Nexa Bold", sans-serif;
+    color: #00d66c;
+}
+
+nav li:last-of-type {
+    margin-left: 1.5em;
+}
+
+
+/* titel home pagina */
+
+h1 {
+    margin-top: em;
+    padding-top: 0.35em;
+    display: flex;
+    justify-content: center;
+    font-family: "Nexa Bold", sans-serif;
+    font-size: 3em;
+    color: #2800a0;
+}
+
+footer p {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 2em;
+    font-size: 0.8em;
+    color: #909090;
+}
+
+p {
+    line-height: 1.5em;
+    margin-bottom: 1em;
+}
+
+
+/* EERSTE BREAKPOINT - MOBIEL */
+
+@media(min-width:23em) {
+    /* vormgeving driehoek */
+    header div:last-child {
+        margin-top: 10em;
+        width: 100%;
+        overflow: hidden;
+    }
+    header div:last-child:before {
+        content: '';
+        position: absolute;
+        width: 17em;
+        bottom: 0.5em;
+        height: 150%;
+        margin-bottom: 6em;
+        border-radius: 0.3em;
+        box-shadow: 0 0 0 70em lightgreen;
+        transform: rotate(45deg);
+    }
+    /* reageer field*/
+    h3 {
+        font-family: "Nexa Bold", sans-serif;
+        font-size: 1.5em;
+        padding: 1em;
+        color: #2800a0;
+        display: flex;
+        justify-content: center;
+    }
+    section:first-of-type > h3 {
+        color: #00d66c;
+    }
+    p {
+        margin: 0.2em;
+        display: flex;
+        justify-content: center;
+        font-family: "Nexa Bold", sans-serif;
+        font-size: 1em;
+        color: white;
+    }
+    textarea {
+        margin-top {}
+        color: lightgrey;
+        font-family: "Trebuchet MS", sans-serif;
+        padding: 1em;
+        font-size: 1rem;
+        border: none;
+        width: 80%;
+        height: 7em;
+        border-radius: 0.75rem;
+        resize: none;
+    }
+    button {
+        grid-column: 2 / 3;
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 1em;
+        color: white;
+        background-color: #ff3268;
+        border-radius: 3em;
+        border: none;
+        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+        padding: 0.5em 2em 0.5em 2em;
+        margin: 1.5em 0.5em 0.5em 16em;
+    }
+    section div:last-child {
+        background-color: #f3e5d8;
+        margin-bottom: 4em;
+    }
+    /* verhaal afbeelding*/
+    main > img {
+        margin-top: 3em;
+        width: 100%;
+        background-color: white;
+    }
+    /* geef sterren BRON:https://www.cssscript.com/pure-css-star-rating-component */
+    input {
+        margin-left: 1.2em;
+        overflow: hidden;
+        position: clip: rect(0.5em 0.5em 0.5em 0.5em);
+        clip: rect(0.5em, 0.5em, 0.5em, 0.5em);
+        opacity: 0;
+    }
+    section:first-of-type > form {
+        margin-bottom: 3em;
+        background-color: #f3e5d8;
+        ;
+        padding: 0.6em;
+        width: 19em;
+        border-radius: 3em;
+    }
+    form {
+        margin-left: 3em;
+    }
+    label:before {
+        content: "\2605";
+        font-size: 2em;
+        color: white;
+    }
+    input:checked ~ label:before {
+        color: #FFC107;
+    }
+    label:hover ~ label:before {
+        color: #ffdb70;
+    }
+    label:hover:before {
+        color: #FFC107;
+    }
+}
+
+
+/* TWEEDE BREAKPOINT - TABLET */
+
+@media (min-width: 40em) {
+    /* vormgeving driehoek */
+    header div:last-child {
+        margin-top: 10em;
+        width: 100%;
+        overflow: hidden;
+    }
+    header div:last-child:before {
+        content: '';
+        position: absolute;
+        width: 17em;
+        bottom: 0.5em;
+        height: 150%;
+        margin-bottom: 6em;
+        border-radius: 0.3em;
+        box-shadow: 0 0 0 70em;
+        transform: rotate(45deg);
+    }
+    /* reageer field*/
+    h3 {
+        font-family: "Nexa Bold", sans-serif;
+        font-size: 1.5em;
+        padding: 1em;
+        color: #2800a0;
+        display: flex;
+        justify-content: center;
+    }
+    section:first-of-type > h3 {
+        color: #00d66c;
+    }
+    p {
+        margin: 0.2em;
+        display: flex;
+        justify-content: center;
+        font-family: "Nexa Bold", sans-serif;
+        font-size: 1em;
+        color: white;
+    }
+    textarea {
+        margin-top {}
+        color: lightgrey;
+        font-family: "Trebuchet MS", sans-serif;
+        padding: 1em;
+        font-size: 1rem;
+        border: none;
+        width: 80%;
+        height: 7em;
+        border-radius: 0.75rem;
+        resize: none;
+    }
+    button {
+        grid-column: 2 / 3;
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 1em;
+        color: white;
+        background-color: #ff3268;
+        border-radius: 3em;
+        border: none;
+        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+        padding: 0.5em 2em 0.5em 2em;
+        margin: 1.5em 0.5em 0.5em 16em;
+    }
+    section div:last-child {
+        background-color: #f3e5d8;
+        margin-bottom: 4em;
+    }
+    /* verhaal afbeelding*/
+    main > img {
+        width: 50%;
+        background-color: white;
+    }
+    /* geef sterren BRON:https://www.cssscript.com/pure-css-star-rating-component */
+    input {
+        margin-left: 1.2em;
+        overflow: hidden;
+        position: clip: rect(0.5em 0.5em 0.5em 0.5em);
+        clip: rect(0.5em, 0.5em, 0.5em, 0.5em);
+        opacity: 0;
+    }
+    section:first-of-type > form {
+        margin-bottom: 3em;
+        background-color: #f3e5d8;
+        ;
+        padding: 0.6em;
+        width: 19em;
+        border-radius: 3em;
+    }
+    form {
+        margin-left: calc(35% - 0.5em);
+    }
+    label:before {
+        content: "\2605";
+        font-size: 2em;
+        color: white;
+    }
+    input:checked ~ label:before {
+        color: #FFC107;
+    }
+    label:hover ~ label:before {
+        color: #ffdb70;
+    }
+    label:hover:before {
+        color: #FFC107;
+    }
+}
+
+
+}
