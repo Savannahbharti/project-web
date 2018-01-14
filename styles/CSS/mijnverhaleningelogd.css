@@ -41,9 +41,9 @@ header img {
 /* navigatie menu */
 
 nav ul {
-    margin-top: 1.59em;
+    margin-top: 1.3em;
     margin-left: 7em;
-    font-size: 1em;
+    font-size: 1.1em;
     display: flex;
     justify-content: flex-start;
     list-style: none;
@@ -57,7 +57,7 @@ nav a {
 }
 
 nav li:last-of-type {
-    margin-left: 1.5em;
+    margin-left: 1.6em;
 }
 
 
@@ -79,6 +79,10 @@ h2 {
     display: flex;
     margin-left: 0.5em;
     width: 100%;
+    color: #2800a0;
+}
+
+section:last-of-type > h2 {
     color: white;
 }
 
@@ -91,13 +95,6 @@ h3 {
 }
 
 
-/* Jouw downloads titel */
-
-section:first-of-type > h2 {
-    color: white;
-}
-
-
 /* Jouw downloads & Mijn lijst sections */
 
 section {
@@ -107,42 +104,65 @@ section {
 }
 
 
-/* downloads */
+/* Downloads */
 
 article:nth-child(2),
 article:nth-child(3),
 article:nth-child(4),
 article:nth-child(5) {
     background-color: white;
-    border-radius: 0.5em;
+    border-radius: 0.4em;
     border: thin solid lightgrey;
     width: 28%;
     margin: 0.4em;
     margin-top: 0;
-    width: calc(35%-1em);
+    width: calc(50%-10em);
     position: relative;
 }
 
 article img {
     width: 100%;
     height: auto;
-    border-top-right-radius: 0.5em;
-    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
     border: none;
 }
 
-section:nth-of-type(1) {
-    padding: 1.5em;
-    background-color: #ff3268;
+section {
+    padding: 1em;
 }
 
 section:nth-of-type(2) {
-    padding: 1.5em;
-    margin-top: 3em;
-    margin-bottom: 4em;
     background-color: #2800a0;
     border-bottom: thin solid lightgrey;
 }
+
+
+/* Footer verhalen mijn downloads + mijn lijst */
+
+article > footer > ul {
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    background-color: #00d66c;
+    color: white;
+    margin-bottom: 0;
+    padding: 0.2em;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Nexa Bold", sans-serif;
+    font-size: 0.7em;
+}
+
+li img {
+    position: relative;
+    padding: 0.1em;
+    width: 0.9em;
+    height: auto;
+}
+
+
+/* Transavia info footer */
 
 footer p {
     background-color: whitesmoke;
@@ -153,3 +173,60 @@ footer p {
     font-size: 0.8em;
     color: #909090;
 }
+
+
+/* schakelaar download BRON:https://codepen.io/thelaazyguy/pen/MvqpPr/?editors=1100*/
+
+
+/* Styling download schakelaar */
+
+input[type="checkbox"] {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0.9em;
+    font-size: 1.9em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 15em;
+    height: 2em;
+    background: lightgrey;
+    border-radius: 3em;
+    outline: none;
+    transition: all .2s ease-in-out;
+    transform: scale(0.45);
+}
+
+
+/* Achtergond verandert als schakelaar aan is */
+
+input[type="checkbox"]:checked {
+    background: #00d66c;
+}
+
+
+/* Download button */
+
+input[type="checkbox"]:after {
+    position: absolute;
+    content: "Download";
+    padding-top: 0.5em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-family: "Nexa Bold", sans-serif;
+    color: gray;
+    height: 1.5em;
+    border-radius: 1em;
+    background: white;
+    transform: scale(0.98);
+    -webkit-transition: all .1s ease-in-out;
+}
+
+
+/* ruimte schakelaar aan */
+
+input[type="checkbox"]:checked:after {
+    left: calc(50% - 1.5em);
+}
+
+
+/* Switch 1 Specific Style End */

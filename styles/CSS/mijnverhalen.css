@@ -41,9 +41,9 @@ header img {
 /* navigatie menu */
 
 nav ul {
-    margin-top: 1.5em;
+    margin-top: 1.3em;
     margin-left: 7em;
-    font-size: 1em;
+    font-size: 1.1em;
     display: flex;
     justify-content: flex-start;
     list-style: none;
@@ -57,7 +57,7 @@ nav a {
 }
 
 nav li:last-of-type {
-    margin-left: 1.5em;
+    margin-left: 1.6em;
 }
 
 
@@ -71,83 +71,6 @@ h1 {
     font-size: 3em;
     color: #00d66c;
 }
-
-
-/* Aanmeld formulier */
-
-form {
-    background-color: white;
-    margin-top: 2.5em;
-    border-radius: 0.9em;
-    border: 0.05em solid lightgrey;
-}
-
-fieldset {
-    margin-top: 1em;
-    border: none;
-}
-
-
-/* Titel aanmeld formulier */
-
-legend {
-    font-family: "Nexa Bold", sans-serif;
-    color: #2800A0;
-    font-size: 1.8em;
-}
-
-
-/* Invuld veld */
-
-label {
-    font-family: "Nexa Bold", sans-serif;
-}
-
-input {
-    margin-left: 0.05em;
-    border-radius: 0.1em;
-    width: 100%;
-    height: 0.35em;
-    font-size: 3.5em;
-    transition: all 0.3s ease-out;
-    outline: none;
-    border: 0.02em solid #868686;
-}
-
-form ul li {
-    list-style: none;
-    font-family: font-family: "Trebuchet MS", sans-serif;
-}
-
-section form footer ul li a {
-    font-size: 0.8em;
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: relative;
-    color: #2800a0;
-    text-decoration: none;
-    padding: 0.3em 0em;
-}
-
-
-/* Aanmeld button */
-
-form button {
-    float: right;
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 1em;
-    color: white;
-    background-color: #ff3268;
-    border-radius: 3em;
-    border: none;
-    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
-    padding: 0.5em 2em 0.5em 2em;
-    margin: 0.5em 0.5em 0.5em 0.5em;
-}
-
-
-/* Jouw downloads & Mijn lijst titel */
 
 h2 {
     display: flex;
@@ -178,4 +101,106 @@ p {
     display: flex;
     margin-left: 0.6em;
     margin-top: 0;
+}
+
+
+/* EERSTE BREAKPOINT */
+
+@media(min-width:20em) {}
+
+
+/* Aanmeld formulier */
+
+form {
+    display: flex;
+    width: 10em;
+    height: 26em;
+    margin-left: 5%;
+    margin-top: 2.5em;
+    width: 88%;
+    border-radius: 0.8em;
+    border: 0.05em solid lightgrey;
+}
+
+fieldset {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    border: none;
+}
+
+form > a {
+    display: flex;
+    position: absolute;
+    margin-top: 15.5em;
+    margin-left: 1.9em;
+    font-size: 1em;
+    list-style: none;
+    color: dimgray;
+}
+
+form:valid {
+    background-color: palegreen;
+}
+
+legend {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: "Nexa Bold", sans-serif;
+    color: #2800A0;
+    font-size: 1.8em;
+}
+
+
+/* Invuld veld */
+
+label {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.3em;
+    margin-bottom: 1.1em;
+    font-family: "Nexa Bold", sans-serif;
+}
+
+input {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 0.1em;
+    width: 14em;
+    height: 1.5em;
+    font-size: 1em;
+    transition: all 0.3s ease-out;
+    outline: none;
+    border: 0.02em solid #868686;
+}
+
+input:valid {
+    border: #00d66c solid 0.04em;
+}
+
+input:invalid {
+    border-color: #ff3268;
+    background: #ff3268;
+}
+
+input:focus {
+    transform: scale(1.01, 1.01);
+}
+
+
+/* Aanmeld button */
+
+form button {
+    position: absolute;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1em;
+    color: white;
+    background-color: #ff3268;
+    border-radius: 3em;
+    border: none;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    padding: 0.5em 2em 0.5em 2em;
+    margin-top: 15em;
+    margin-left: 8em;
 }

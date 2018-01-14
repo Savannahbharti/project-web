@@ -1,0 +1,209 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+
+/* Balk navigatie menu*/
+
+header > div {
+    position: absolute;
+    z-index: -1;
+    background-color: white;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4em;
+    box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
+}
+
+
+/* Header logo transavia */
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 1.4em;
+    margin-left: 1em;
+    float: left;
+    width: 7.5em;
+}
+
+
+/* navigatie menu */
+
+nav ul {
+    margin-top: 1.3em;
+    margin-left: 7em;
+    font-size: 1.1em;
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    color: #00d66c;
+    width: 100%;
+}
+
+nav a {
+    font-family: "Nexa Bold", sans-serif;
+    color: #00d66c;
+}
+
+nav li:last-of-type {
+    margin-left: 1.6em;
+}
+
+
+/* titel home pagina */
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 1.3em 0 0 0;
+    font-family: "Nexa Bold", sans-serif;
+    font-size: 3em;
+    color: #00d66c;
+}
+
+h2 {
+    display: flex;
+    margin-left: 0.5em;
+    width: 100%;
+    color: #00d66c;
+}
+
+
+/* Jouw downloads titel */
+
+section:first-of-type > h2 {
+    margin-top: 3.5em;
+    color: #2800A0;
+}
+
+
+/* Jouw downloads & Mijn lijst sections + paragraaf */
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+p {
+    font-size: 0.9em;
+    display: flex;
+    margin-left: 0.6em;
+    margin-top: 0;
+}
+
+
+/* EERSTE BREAKPOINT */
+
+@media(min-width:20em) {}
+
+
+/* Aanmeld formulier */
+
+form {
+    display: flex;
+    width: 10em;
+    height: 26em;
+    margin-left: 5%;
+    margin-top: 2.5em;
+    width: 88%;
+    border-radius: 0.8em;
+    border: 0.05em solid lightgrey;
+}
+
+fieldset {
+    margin-top: 0.5em;
+    margin-left: 1em;
+    border: none;
+}
+
+form > a {
+    display: flex;
+    position: absolute;
+    margin-top: 12.5em;
+    margin-left: 1.9em;
+    font-size: 1em;
+    list-style: none;
+    color: dimgray;
+}
+
+form:valid {
+    background-color: palegreen;
+}
+
+
+/* Titel aanmeld formulier */
+
+legend {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: "Nexa Bold", sans-serif;
+    color: #2800A0;
+    font-size: 1.8em;
+}
+
+
+/* Invuld veld */
+
+label {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0.3em;
+    margin-bottom: 1.1em;
+    font-family: "Nexa Bold", sans-serif;
+}
+
+input {
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 0.1em;
+    width: 14em;
+    height: 1.5em;
+    font-size: 1em;
+    transition: all 0.3s ease-out;
+    outline: none;
+    border: 0.02em solid #868686;
+}
+
+input:valid {
+    border: #00d66c solid 0.04em;
+}
+
+input:invalid {
+    border-color: #ff3268;
+    background: #ff3268;
+}
+
+input:focus {
+    transform: scale(1.01, 1.01);
+}
+
+
+/* Aanmeld button */
+
+form button {
+    position: absolute;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1em;
+    color: white;
+    background-color: #ff3268;
+    border-radius: 3em;
+    border: none;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    padding: 0.5em 2em 0.5em 2em;
+    margin-top: 22em;
+    margin-left: 8em;
+}

@@ -1,3 +1,5 @@
+/* verwijdert witruimte pagina */
+
 html {
     overflow-x: hidden;
 }
@@ -56,141 +58,154 @@ nav a {
     color: #00d66c;
 }
 
-nav li:last-of-type {
-    margin-left: 1.6em;
-}
-
 
 /* titel home pagina */
 
 h1 {
-    text-shadow: black 0.0em 0 0.2em;
+    text-shadow: grey 0.0em 0 1em;
     display: flex;
-    margin-top: 0.36em;
+    justify-content: center;
+    margin-top: 0em;
+    margin-bottom: 0em;
     padding: 1em;
     font-family: "Nexa Bold", sans-serif;
-    font-size: 4em;
-    color: #00d66c;
-    background-image: url(achtergrond2.jpg);
+    font-size: 3.4em;
+    color: white;
+    background-image: url(Links/achtergrond2%20copy.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 5em;
+    background-size: 12em;
+    height: 6em;
+}
+
+
+/* H2 Meest bekeken verhalen */
+
+section:first-of-type > h2 {
+    margin-top: 0.1em;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+
+/* Twee meest bekeken verhalen */
+
+section:first-of-type > article {
+    padding: 0.7em;
+    margin: 0.4em;
+    position: relative;
+    border-radius: 0.4em;
+    background: white;
+    width: 35%;
+}
+
+
+/* achtergrond kleur meest bekeken verhalen */
+
+section:first-of-type {
+    margin-top: 0;
+    background-color: #00d66c;
+    ;
+    padding: 1.5em;
 }
 
 
 /* formulier, filteren en sorten */
 
-button:hover {
-    background-color: lightcoral;
-}
-
-button:nth-child(2) {
-    position: relative;
+section > button {
     font-family: "Trebuchet MS", sans-serif;
     font-size: 1em;
     color: white;
-    background-color: #ff3268;
-    border-radius: 3em;
+    background-color: #2800a0;
     border: none;
-    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    box-shadow: inset 0 -0.1875em 0.0625em #120145;
+    border-radius: 3em;
     padding: 0.5em 2em 0.5em 2em;
-    margin-bottom: 2em;
-    margin-left: 20em;
+    margin-left: 12em;
 }
 
-footer p {
-    background-color: whitesmoke;
+button:hover {
+    border-radius: 0;
+    box-shadow: none;
+    background: #ff3268;
+    margin-left: 0;
+    transition: width 3s;
+    width: 1000em;
+}
+
+
+/* filter sorteer + verbergen (aangemaakt class) */
+
+form {
+    display: none;
+}
+
+.sortfilteractive {
+    display: block;
+}
+
+form {
+    width: 100%;
+    background-color: #ff3268;
+    border: 0.05em solid lightgrey;
+}
+
+form >div {
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 2em;
-    font-size: 0.8em;
-    color: #909090;
+    border-radius: 0 0 0 0;
+    background: beige;
+    padding: 1.2em;
 }
 
-p {
-    line-height: 1.5em;
-    margin-bottom: 1em;
+div > button {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 1.3em;
+    padding: 0.5em 2em 0.5em 2em;
+    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+    border-radius: 3em;
+    border: none;
+    margin-bottom: 0.5em;
+    background-color: #ff3268;
 }
 
-section > footer:last-child {
-    width: 100%;
-    padding: 2em;
-    background-color: whitesmoke;
-    margin-bottom: 1em;
+fieldset {
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-start;
+    border: none;
 }
 
-section > footer h2 {
-    color: #2800a0;
+legend {
+    font-family: "Nexa Bold", sans-serif;
+    color: white;
+    font-size: 1em;
+}
+
+label {
+    margin: 0.1em;
+    font-size: 0.91em;
+    font-family: "Trebuchet MS", sans-serif;
+    color: whitesmoke;
+}
+
+input:focus {
+    transform: scale(1.01, 1.01);
+}
+
+section a:nth-child(8) {
+    margin-bottom: 2em;
+    color: gray;
+    list-style: none;
 }
 
 
-/* EERSTE BREAKPOINT - MOBIEL */
+/* EERSTE BREAKPOINT */
 
 @media(min-width:20em) {
-    form {
-        background-color: #fcf9f7;
-        ;
-        border-radius: 0.9em;
-        border: 0.05em solid lightgrey;
-        margin-bottom: 3em;
-    }
-    form >div {
-        display: flex;
-        justify-content: center;
-        border-radius: 0 0 0.9em 0.9em;
-        background: #00d66c;
-        padding: 1.2em;
-        box-shadow: inset 0 -0.1875em 0.0625em grey;
-    }
-    div > button {
-        display: flex;
-        justify-content: center;
-        font-family: "Trebuchet MS", sans-serif;
-        font-size: 1.3em;
-        padding: 0.5em 2em 0.5em 2em;
-        box-shadow: inset 0 -0.1875em 0.0625em grey;
-        border-radius: 3em;
-        border: none;
-        margin-bottom: 0.5em;
-    }
-    fieldset {
-        margin-top: 1em;
-        display: flex;
-        border: none;
-    }
-    legend {
-        font-family: "Nexa Bold", sans-serif;
-        color: #2800A0;
-        font-size: 1.3em;
-    }
-    label {
-        font-size: 1.1em;
-        font-family: "Trebuchet MS", sans-serif;
-        color: grey;
-    }
-    /* H2 Meest bekeken verhalen */
-    section:first-of-type > h2 {
-        display: flex;
-        font-size: 2.5em;
-        color: #2800A0;
-    }
-    /* Twee meest bekeken verhalen */
-    section:first-of-type > article {
-        border-radius: 0.9em;
-        border: 0.05em solid lightgrey;
-        background: whitesmoke;
-        border-bottom-width: thin;
-        width: 35%;
-        margin: 0.8em;
-        width: calc(35%-2em);
-        position: relative;
-    }
-    /* achtergrond kleur meest bekeken verhalen */
-    section:first-of-type {
-        background-color: #f3e5d8;
-        padding: 1.5em;
-    }
     /* tussenkoppen */
     h2 {
         display: flex;
@@ -204,39 +219,49 @@ section > footer h2 {
         font-family: "Nexa Bold", sans-serif;
         text-decoration: none;
     }
-    article footer ul {
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        font-family: "Nexa Bold", sans-serif;
-        font-size: 0.9em;
-        margin-right: 3em;
-    }
-    article h3 {
+    article h3:nth-child(1) {
         display: flex;
         justify-content: center;
         color: #2800a0;
-        font-size: 1.4em;
+        font-size: 1.2em;
+        margin-left: 0.3em;
+    }
+    article h3 {
+        display: flex;
+        justify-content: flex-start;
+        color: #2800a0;
+        font-size: 1em;
+        margin-left: 0.3em;
+        margin: calc(35%-2em);
+        margin-top: 0.5em;
     }
     /* Afbeeldingen bij de verhalen */
     article img {
         width: 100%;
         height: auto;
-        border-top-right-radius: 0.9em;
-        border-top-left-radius: 0.9em;
+        border-top-right-radius: 0.5em;
+        border-top-left-radius: 0.5em;
     }
     /* 4 kolommen verhalen */
-    article:nth-child(2),
-    article:nth-child(3),
     article:nth-child(4),
-    article:nth-child(5) {
-        border-radius: 0.9em;
+    article:nth-child(5),
+    article:nth-child(6),
+    article:nth-child(7) {
+        border-radius: 0.5em;
         border: 0.05em solid lightgrey;
         border-bottom-width: thin;
         width: 35%;
         margin: 0.8em;
         width: calc(35%-2em);
         position: relative;
+    }
+    article:nth-child(6),
+    article:nth-child(7) {
+        margin-bottom: 1.5em;
+    }
+    article:nth-child(5),
+    article:nth-child(4) {
+        margin-top: 2em;
     }
     section {
         display: flex;
@@ -249,8 +274,25 @@ section > footer h2 {
         width: 100%;
         width: calc(100%-5em);
         position: relative;
-        border-bottom-right-radius: 0.9em;
-        border-bottom-left-radius: 0.9em;
+        border-bottom-right-radius: 0.5em;
+        border-bottom-left-radius: 0.5em;
+    }
+    article > footer > ul {
+        background-color: #00d66c;
+        color: white;
+        margin-bottom: 0;
+        padding: 0.2em;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Nexa Bold", sans-serif;
+        font-size: 0.9em;
+    }
+    li img {
+        position: relative;
+        padding: 0.12em;
+        width: 0.7em;
+        height: auto;
     }
     /* Mijn lijst + download icoontje */
     div img:first-child {
@@ -267,7 +309,8 @@ section > footer h2 {
     }
     /* Zoekbalk */
     footer > input {
-        margin-left: 3em;
+        display: flex;
+        margin-left: em;
         border: solid #2800A0;
         0.05em;
         position: absolute;
@@ -284,303 +327,163 @@ section > footer h2 {
         border-radius: 0 0.9em 0.9em 0;
         color: white;
         background-color: #2800A0;
-        height: 3.99em;
+        height: 4.2em;
         width: 15%;
     }
-}
-
-
-/* TWEEDE BREAKPOINT - TABLET */
-
-@media (min-width: 40em) {
-    form {
-        width: calc(50% - 0.1em);
-        background-color: white;
-        border-radius: 0.9em;
-        border: 0.05em solid lightgrey;
-        margin-bottom: 3em;
-    }
-    form >div {
-        width: calc(50% - em);
-        display: flex;
-        justify-content: center;
-        border-radius: 0 0 0.9em 0.9em;
-        background: #00d66c;
-        padding: 1.2em;
-        box-shadow: inset 0 -0.1875em 0.0625em grey;
-    }
-    div > button {
-        display: flex;
-        justify-content: center;
-        font-family: "Trebuchet MS", sans-serif;
-        font-size: 1.3em;
-        padding: 0.5em 2em 0.5em 2em;
-        box-shadow: inset 0 -0.1875em 0.0625em grey;
-        border-radius: 3em;
-        border: none;
-        margin-bottom: 0.5em;
-    }
-    fieldset {
-        margin-top: 1em;
-        display: flex;
-        border: none;
-    }
-    legend {
-        font-family: "Nexa Bold", sans-serif;
-        color: #2800A0;
-        font-size: 1.3em;
-    }
-    label {
-        font-size: 1.1em;
-        font-family: "Trebuchet MS", sans-serif;
-        color: grey;
-    }
-    /* H2 Meest bekeken verhalen */
-    section:first-of-type > h2 {
-        display: flex;
-        font-size: 2.5em;
-        color: #2800A0;
-    }
-    /* Twee meest bekeken verhalen */
-    section:first-of-type > article {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        border: none;
-        background-color: #fcf9f7;
-        padding: 1.5em;
-        width: 38%;
-        margin: 0.8em;
-        width: calc(35%-2em);
-    }
-    /* achtergrond kleur meest bekeken verhalen */
-    section:first-of-type {
-        background-color: #f3e5d8;
-        padding: 1.5em;
-    }
-    /* tussenkoppen */
-    h2 {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        font-family: "Nexa Bold", sans-serif;
-        font-size: 2em;
-        color: #00d66c;
-    }
-    a[href*="html"] {
-        font-family: "Nexa Bold", sans-serif;
-        text-decoration: none;
-    }
-    article footer > ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        font-family: "Nexa Bold", sans-serif;
-        font-size: 1em;
-        line-height: 1.3em;
-    }
-    h3:hover {
-        color: bisque;
-    }
-    article h3 {
-        display: flex;
-        justify-content: center;
-        color: #2800a0;
-        font-size: 1.5em;
-    }
-    /* Afbeeldingen bij de verhalen */
-    article img {
-        width: 100%;
-        height: auto;
-        border-top-right-radius: 0.9em;
-        border-top-left-radius: 0.9em;
-    }
-    /* 4 kolommen verhalen */
-    article:nth-child(2),
-    article:nth-child(3),
-    article:nth-child(4),
-    article:nth-child(5) {
-        border-radius: 0.9em;
-        border: 0.05em solid lightgrey;
-        border-bottom-width: thin;
-        width: 20%;
-        margin: 0.8em;
-        width: calc(35%-2em);
-        position: relative;
-    }
-    section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    /* Mijn lijst + download background */
-    footer div {
+    footer p {
         background-color: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 2em;
+        font-size: 0.8em;
+        color: #909090;
+    }
+    section > footer:last-child {
         width: 100%;
-        width: calc(100%-5em);
-        position: relative;
-        border-bottom-right-radius: 0.9em;
-        border-bottom-left-radius: 0.9em;
+        padding: 2em;
+        background-color: #f7f7f7;
     }
-    /* Mijn lijst + download icoontje */
-    div img:first-child {
-        margin: 0.5em 0 0 0.5em;
-        border-radius: 0;
-        width: 20%;
-        position: absolute;
+    p {
+        line-height: 1.5em;
+        margin-bottom: 1em;
     }
-    div img:nth-child(3) {
-        margin: 0.5em 0 0 5.5em;
-        border-radius: 0;
-        width: 20%;
-        position: relative;
-    }
-}
-
-
-/* DERDE BREAKPOINT - DESKTOP */
-
-@media(min-width:100em) {
-    form {
-        width: calc(50% - 0.1em);
-        background-color: #fcf9f7;
-        ;
-        border-radius: 0.9em;
-        border: 0.05em solid lightgrey;
-    }
-    form >div {
-        width: calc(50% - em);
-        display: flex;
-        justify-content: center;
-        border-radius: 0 0 0.9em 0.9em;
-        background: #00d66c;
-        padding: 1.2em;
-        box-shadow: inset 0 -0.1875em 0.0625em grey;
-    }
-    div > button {
-        display: flex;
-        justify-content: center;
-        font-family: "Trebuchet MS", sans-serif;
-        font-size: 1.3em;
-        padding: 0.5em 2em 0.5em 2em;
-        box-shadow: inset 0 -0.1875em 0.0625em grey;
-        border-radius: 3em;
-        border: none;
-        margin-bottom: 0.5em;
-    }
-    fieldset {
-        margin-top: 1em;
-        display: flex;
-        border: none;
-    }
-    legend {
-        font-family: "Nexa Bold", sans-serif;
-        color: #2800A0;
-        font-size: 1.3em;
-    }
-    label {
-        font-size: 1.1em;
-        font-family: "Trebuchet MS", sans-serif;
-        color: grey;
-    }
-    /* H2 Meest bekeken verhalen */
-    section:first-of-type > h2 {
-        display: flex;
-        font-size: 2.5em;
-        color: #2800A0;
-    }
-    /* Twee meest bekeken verhalen */
-    section:first-of-type > article {
-        display: flex;
-        position: relative;
-        border: none;
-        background-color: #fcf9f7;
-        padding: 1.5em;
-        width: 45%;
-        margin: 0.8em;
-        width: calc(35%-2em);
-    }
-    /* achtergrond kleur meest bekeken verhalen */
-    section:first-of-type {
-        background-color: #f3e5d8;
-        padding: 1.5em;
-    }
-    /* tussenkoppen */
-    h2 {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        font-family: "Nexa Bold", sans-serif;
-        font-size: 2em;
-        color: #2800a0;
-    }
-    a[href*="html"] {
-        font-family: "Nexa Bold", sans-serif;
-        text-decoration: none;
-    }
-    article footer > ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        font-family: "Nexa Bold", sans-serif;
-        font-size: 1em;
-        line-height: 1.3em;
-        margin: 0 auto;
-    }
-    h3:hover {
-        color: bisque;
-    }
-    article h3 {
+    section > footer h2 {
         display: flex;
         justify-content: flex-start;
+        font-size: 1.3em;
         color: #2800a0;
-        font-size: 2.1em;
     }
-    /* Afbeeldingen bij de verhalen */
-    article img {
+}
+
+
+/* TWEEDE BREAKPOINT */
+
+@media(min-width:35em) {
+    /* titel home pagina */
+    h1 {
+        font-size: 3.5em;
+        background-image: url(Links/achtergrond2%20copy.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    /* Twee meest bekeken verhalen */
+    section:first-of-type > article {
+        padding: 0.7em;
+        width: 43%;
+        margin: 0.4em;
+    }
+    section > button {
+        margin-left: 25em;
+    }
+    form {
         width: 100%;
-        height: auto;
-        border-top-right-radius: 0.9em;
-        border-top-left-radius: 0.9em;
+    }
+    article h3:nth-child(1) {
+        font-size: 1.8em;
+    }
+}
+
+
+/* DERDE BREAKPOINT */
+
+@media(min-width:40em) {
+    h1 {
+        font-size: 3.5em;
+        background-size: 100%;
+    }
+    section > button {
+        margin-left: 26em;
+    }
+    article h3:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        font-size: 1.8em;
     }
     /* 4 kolommen verhalen */
-    article:nth-child(2),
-    article:nth-child(3),
     article:nth-child(4),
-    article:nth-child(5) {
-        border-radius: 0.9em;
+    article:nth-child(5),
+    article:nth-child(6),
+    article:nth-child(7) {
+        border-radius: 0.5em;
         border: 0.05em solid lightgrey;
         border-bottom-width: thin;
-        width: 20%;
-        margin: 0.8em;
+        width: 22%;
+        margin: 0.5em;
         width: calc(35%-2em);
         position: relative;
     }
-    section {
-        display: flex;
-        flex-wrap: wrap;
+}
+
+
+/* VIERDE BREAKPOINT */
+
+@media(min-width:47em) {
+    /* titel home pagina */
+    h1 {
+        font-size: 5em;
+        background-size: 100%;
+    }
+    /* Twee meest bekeken verhalen */
+    section:first-of-type > article {
+        padding: 0.7em;
+        width: 43%;
+        margin: 0.9em;
+    }
+    section > button {
+        margin-left: 45em;
+    }
+    article h3:nth-child(1) {
+        font-size: 1.8em;
+    }
+    /* Zoekbalk */
+    footer > input {
+        margin-left: 12%;
+        width: 65%;
+    }
+    footer > button {
+        margin-left: 70%;
+        height: 4.2em;
+        width: 14%;
+    }
+}
+
+
+/* VIERDE BREAKPOINT */
+
+@media(min-width:68em) {
+    /* titel home pagina */
+    h1 {
+        margin-top: 0;
+        padding-left: 2em;
+        font-size: 6em;
+        background-size: 100%;
+    }
+    /* Twee meest bekeken verhalen */
+    section:first-of-type > article {
+        padding: 0.7em;
+        width: 30%;
+        margin: 0.9em;
+    }
+    section > button {
+        margin-left: 59em;
+    }
+    article h3:nth-child(1) {
         justify-content: center;
+        font-size: 2.5em;
     }
-    /* Mijn lijst + download background */
-    footer div {
-        background-color: #f1f1f1f1;
-        width: 100%;
-        width: calc(100%-5em);
-        position: relative;
-        border-bottom-right-radius: 0.9em;
-        border-bottom-left-radius: 0.9em;
+    article h3 {
+        justify-content: flex-start;
+        font-size: 1.5em;
     }
-    /* Mijn lijst + download icoontje */
-    div img:first-child {
-        margin: 0.5em 0 0 0.5em;
-        border-radius: 0;
-        width: 20%;
-        position: absolute;
+    /* Zoekbalk */
+    footer > input {
+        margin-left: 12%;
+        width: 65%;
     }
-    div img:nth-child(3) {
-        margin: 0.5em 0 0 5.5em;
-        border-radius: 0;
-        width: 20%;
-        position: relative;
+    footer > button {
+        margin-left: 70%;
+        height: 4.2em;
+        width: 14%;
     }
 }
