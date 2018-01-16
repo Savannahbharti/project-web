@@ -5,4 +5,4 @@ var show = function () {
     section.classList.toggle('sortfilteractive');
 };
 button.addEventListener('click', show);
-section.setVisibility(button.INVISIBLE);
+

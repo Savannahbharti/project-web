@@ -65,10 +65,11 @@ nav li:last-of-type {
 
 h1 {
     display: flex;
-    justify-content: center;
-    margin: 1.3em 0 0 0;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-top: 1.3em;
     font-family: "Nexa Bold", sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #00d66c;
 }
 
@@ -83,7 +84,6 @@ h2 {
 /* Jouw downloads titel */
 
 section:first-of-type > h2 {
-    margin-top: 3.5em;
     color: #2800A0;
 }
 
@@ -113,13 +113,14 @@ p {
 
 form {
     display: flex;
-    width: 10em;
+    width: 18.8em;
+    width: calc(35%-2em);
     height: 26em;
     margin-left: 5%;
-    margin-top: 2.5em;
-    width: 88%;
+    margin-top: 1.4em;
     border-radius: 0.8em;
     border: 0.05em solid lightgrey;
+    background-color: rgba(255, 255, 255, 0.87);
 }
 
 fieldset {
@@ -139,7 +140,11 @@ form > a {
 }
 
 form:valid {
-    background-color: palegreen;
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+form:invalid {
+    background: lightpink;
 }
 
 
@@ -161,9 +166,10 @@ legend {
 label {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0.3em;
+    margin-left: 0.em;
     margin-bottom: 1.1em;
     font-family: "Nexa Bold", sans-serif;
+    width: 6em;
 }
 
 input {
@@ -188,13 +194,13 @@ input:invalid {
 }
 
 input:focus {
-    transform: scale(1.01, 1.01);
+    transform: scale(1.01, 1.09);
 }
 
 
 /* Aanmeld button */
 
-form button {
+form a:nth-child(2) {
     position: absolute;
     font-family: "Trebuchet MS", sans-serif;
     font-size: 1em;
@@ -206,4 +212,85 @@ form button {
     padding: 0.5em 2em 0.5em 2em;
     margin-top: 22em;
     margin-left: 8em;
+}
+
+
+/* BREAKPOINTS FORMULIER*/
+
+@media(min-width:22em) {
+    h1,
+    form,
+    h2 {
+        margin-left: 10%;
+    }
+}
+
+@media(min-width:25em) {
+    h1,
+    form,
+    h2,
+    p {
+        margin-left: 15%;
+    }
+}
+
+@media(min-width:27em) {
+    h1,
+    form,
+    h2,
+    p {
+        margin-left: 20%;
+    }
+    h1 {
+        text-shadow: black 0.0em 0.03em 0.03em;
+    }
+    body {
+        background-image: url(Links/achtergrond88.jpg);
+        background-repeat: no-repeat;
+        background-size: 57.9em;
+        height: 4.5em;
+    }
+}
+
+@media(min-width:33em) {
+    h1,
+    form,
+    h2,
+    p {
+        margin-left: 26%;
+    }
+    p,
+    h2,
+    section:first-of-type > h2 {
+        color: white;
+        text-shadow: black 0.0em 0.03em 0.03em;
+    }
+    body {
+        background-image: url(Links/achtergrond88.jpg);
+        background-repeat: no-repeat;
+        background-size: 80em;
+    }
+}
+
+@media(min-width:38em) {
+    h1,
+    form,
+    h2,
+    p {
+        margin-left: 30%;
+    }
+}
+
+@media(min-width:42em) {
+    h1,
+    form,
+    h2,
+    p {
+        margin-left: 40%;
+    }
+    body {
+        background-image: url(Links/achtergrond88.jpg);
+        background-repeat: no-repeat;
+        background-size: 80em;
+    }
 }

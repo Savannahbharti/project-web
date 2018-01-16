@@ -187,7 +187,7 @@ input[type="checkbox"] {
     font-size: 1.9em;
     -moz-appearance: none;
     -webkit-appearance: none;
-    width: 15em;
+    width: 8em;
     height: 2em;
     background: lightgrey;
     border-radius: 3em;
@@ -195,6 +195,9 @@ input[type="checkbox"] {
     transition: all .2s ease-in-out;
     transform: scale(0.45);
 }
+
+
+
 
 
 /* Achtergond verandert als schakelaar aan is */
@@ -228,5 +231,33 @@ input[type="checkbox"]:checked:after {
     left: calc(50% - 1.5em);
 }
 
+/* micro interactie */
+#downloadimg {
+display:none;
+         
+ }
+.downloadzien {
+     display:block; 
+ }
+button{
+    border-radius: 1em;
+    width: 7em;
+    height: 2em;
+    background-color: white;
+  
+    margin-left: 13em;
+    background-color: lig;
+    font-family: "Nexa Bold", sans-serif;
+    font-size:0.8em;
+    color:grey;
+    padding-top: 0.5em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
+ 
 
-/* Switch 1 Specific Style End */
+
+   
+    
+
+

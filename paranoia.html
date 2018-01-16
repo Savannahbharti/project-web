@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Paranoia</title>
-    <meta name="viewport" content="widtd=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/CSS/paranoia.css"> </head>
 
 <body>
@@ -19,7 +19,10 @@
         <h1>Paranoia</h1>
         <div> </div>
     </header>
-    <main> <img src="styles/CSS/Links/paranoia%202.png" alt=paranoia><img src="styles/CSS/Links/special.png" alt=paranoia> </main>
+    <main>
+        <div class=mobiel> <img src="styles/CSS/Links/paranoia%202.png" alt=paranoia> <img src="styles/CSS/Links/special.png" alt=paranoia> </div>
+        <div class=desktop> <img src="styles/CSS/Links/paranoiadesktop.png" alt=paranoiaDesktop> <img src="styles/CSS/Links/paranoiadesktopspecial.png" alt="paranoia"></div>
+    </main>
     <section>
         <form>
             <input class="star star-4" id="star-4" type="radio" name="star" />
@@ -30,16 +33,17 @@
             <label class="star star-2" for="star-2"></label>
             <input class="star star-1" id="star-1" type="radio" name="star" />
             <label class="star star-1" for="star-1"></label>
-        </form>
+        </form> <img id="popimg" src="styles/CSS/Links/popup%20.png" alt="popup">
         <div>
             <h3> Schrijf een review!</h3>
             <textarea rows="4" cols="50" name="comment"> Plaatst een reactie...</textarea>
-            <button> waardering</button>
+            <button id="popupbutton"> waardering</button>
         </div>
     </section>
     <footer>
         <p> All rights reserved copyright 2018 © Transavia </p>
     </footer>
+    <script src="js/script2.js"></script>
 </body>
 
 </html>

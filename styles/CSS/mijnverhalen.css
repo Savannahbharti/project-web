@@ -65,10 +65,11 @@ nav li:last-of-type {
 
 h1 {
     display: flex;
-    justify-content: center;
-    margin: 1.3em 0 0 0;
+    justify-content: flex-start;
+    margin-left: 5%;
+    margin-top: 1.3em;
     font-family: "Nexa Bold", sans-serif;
-    font-size: 3em;
+    font-size: 2.5em;
     color: #00d66c;
 }
 
@@ -83,7 +84,6 @@ h2 {
 /* Jouw downloads titel */
 
 section:first-of-type > h2 {
-    margin-top: 3.5em;
     color: #2800A0;
 }
 
@@ -106,101 +106,167 @@ p {
 
 /* EERSTE BREAKPOINT */
 
-@media(min-width:20em) {}
-
-
-/* Aanmeld formulier */
-
-form {
-    display: flex;
-    width: 10em;
-    height: 26em;
-    margin-left: 5%;
-    margin-top: 2.5em;
-    width: 88%;
-    border-radius: 0.8em;
-    border: 0.05em solid lightgrey;
+@media(min-width:20em) {
+    /* Aanmeld formulier */
+    form {
+        display: flex;
+        width: 18.8em;
+        width: calc(35%-2em);
+        height: 26em;
+        margin-left: 5%;
+        margin-top: 1.4em;
+        border-radius: 0.8em;
+        border: 0.05em solid lightgrey;
+    }
+    fieldset {
+        margin-top: 0.5em;
+        margin-left: 1em;
+        border: none;
+    }
+    form > a {
+        display: flex;
+        position: absolute;
+        margin-top: 12.5em;
+        margin-left: 1.9em;
+        font-size: 1em;
+        list-style: none;
+        color: dimgray;
+    }
+    form:valid {
+        background-color: rgba(255, 255, 255, 0.87);
+    }
+    legend {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        font-family: "Nexa Bold", sans-serif;
+        color: #2800A0;
+        font-size: 1.8em;
+    }
+    /* Invuld veld */
+    label {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0.3em;
+        margin-bottom: 1.1em;
+        font-family: "Nexa Bold", sans-serif;
+        width: 15em;
+    }
+    input {
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 0.1em;
+        width: 14em;
+        height: 1.5em;
+        font-size: 1em;
+        transition: all 0.3s ease-out;
+        outline: none;
+        border: 0.02em solid #868686;
+    }
+    input:valid {
+        border: #00d66c solid 0.09em;
+    }
+    input:invalid {
+        border-color: #ff3268;
+        background: #ff3268;
+    }
+    input:focus {
+        transform: scale(1.01, 1.09);
+    }
+    /* Aanmeld button */
+    form a:nth-child(2) {
+        position: absolute;
+        font-family: "Trebuchet MS", sans-serif;
+        font-size: 1em;
+        color: white;
+        background-color: #ff3268;
+        border-radius: 3em;
+        border: none;
+        box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
+        padding: 0.5em 2em 0.5em 2em;
+        margin-top: 19em;
+        margin-left: 8em;
+    }
 }
 
-fieldset {
-    margin-top: 0.5em;
-    margin-left: 1em;
-    border: none;
+
+/* BREAKPOINTS FORMULIER*/
+
+@media(min-width:22em) {
+    h1,
+    form,
+    h2 {
+        margin-left: 10%;
+    }
 }
 
-form > a {
-    display: flex;
-    position: absolute;
-    margin-top: 15.5em;
-    margin-left: 1.9em;
-    font-size: 1em;
-    list-style: none;
-    color: dimgray;
+@media(min-width:25em) {
+    h1,
+    form,
+    h2,
+    p {
+        margin-left: 15%;
+    }
 }
 
-form:valid {
-    background-color: palegreen;
+@media(min-width:27em) {
+    h1,
+    form,
+    h2,
+    p {
+        margin-left: 20%;
+    }
+    h1 {
+        text-shadow: black 0.0em 0.03em 0.03em;
+    }
+    body {
+        background-image: url(Links/achtergrond88.jpg);
+        background-repeat: no-repeat;
+        background-size: 57.9em;
+        height: 4.5em;
+    }
 }
 
-legend {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    font-family: "Nexa Bold", sans-serif;
-    color: #2800A0;
-    font-size: 1.8em;
+@media(min-width:33em) {
+    h1,
+    form,
+    h2,
+    p {
+        margin-left: 26%;
+    }
+    p,
+    h2,
+    section:first-of-type > h2 {
+        color: white;
+        text-shadow: black 0.0em 0.03em 0.03em;
+    }
+    body {
+        background-image: url(Links/achtergrond88.jpg);
+        background-repeat: no-repeat;
+        background-size: 80em;
+    }
 }
 
-
-/* Invuld veld */
-
-label {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 0.3em;
-    margin-bottom: 1.1em;
-    font-family: "Nexa Bold", sans-serif;
+@media(min-width:38em) {
+    h1,
+    form,
+    h2,
+    p {
+        margin-left: 30%;
+    }
 }
 
-input {
-    display: flex;
-    justify-content: flex-start;
-    border-radius: 0.1em;
-    width: 14em;
-    height: 1.5em;
-    font-size: 1em;
-    transition: all 0.3s ease-out;
-    outline: none;
-    border: 0.02em solid #868686;
-}
-
-input:valid {
-    border: #00d66c solid 0.04em;
-}
-
-input:invalid {
-    border-color: #ff3268;
-    background: #ff3268;
-}
-
-input:focus {
-    transform: scale(1.01, 1.01);
-}
-
-
-/* Aanmeld button */
-
-form button {
-    position: absolute;
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 1em;
-    color: white;
-    background-color: #ff3268;
-    border-radius: 3em;
-    border: none;
-    box-shadow: inset 0 -0.1875em 0.0625em #ca2b55;
-    padding: 0.5em 2em 0.5em 2em;
-    margin-top: 15em;
-    margin-left: 8em;
+@media(min-width:42em) {
+    h1,
+    form,
+    h2,
+    p {
+        margin-left: 40%;
+    }
+    body {
+        background-image: url(Links/achtergrond88.jpg);
+        background-repeat: no-repeat;
+        background-size: 80em;
+    }
 }
