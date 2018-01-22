@@ -1,22 +1,21 @@
  html {
      overflow-x: hidden;
  }
-
-section > img{
-    position: absolute;
-    margin-top:5em;
-    width: 25em;
-    display:none;
-}
+ 
+ section > img {
+     position: absolute;
+     margin-top: 5em;
+     width: 20.5em;
+     display: none;
+ }
  
  #filter {
      display: none;
-         
  }
  
  .popupzien {
      display: block;
- 
+     transition: all .35s;
  }
  
  body {
@@ -40,7 +39,7 @@ section > img{
  }
  
  .mobiel > img:last-child {
-     margin-top: 5.45em;
+     margin-top: 5.2em;
      display: flex;
      position: relative;
      animation: blink 0.1s;
@@ -70,7 +69,7 @@ section > img{
  }
  
  .mobiel > img:first-of-type {
-     margin-top: 14em;
+     margin-top: 13.5em;
  }
  
  .desktop {
@@ -345,7 +344,7 @@ section > img{
          top: 0;
      }
      .desktop > img:first-of-type {
-         margin-top: 13.8em;
+         margin-top: 13.2em;
      }
      .mobiel {
          display: none;

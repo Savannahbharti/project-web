@@ -194,7 +194,8 @@ input:invalid {
 }
 
 input:focus {
-    transform: scale(1.01, 1.09);
+    transform: scale(1.05);
+    background-color: #f1f1f1;
 }
 
 
@@ -212,6 +213,10 @@ form a:nth-child(2) {
     padding: 0.5em 2em 0.5em 2em;
     margin-top: 22em;
     margin-left: 8em;
+}
+
+form a:nth-child(2):hover {
+    opacity: 0.67;
 }
 
 

@@ -24,6 +24,47 @@ header > div {
     box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
 }
 
+.downloadbutton {
+    position: absolute;
+    background: #ECECEC;
+    border-radius: 2em;
+    padding: 0.5em 0.5em;
+    font-family: "Nexa Bold", sans-serif;
+    font-weight: bold;
+    color: #7f7f7f;
+    width: 12em;
+    margin-left: 52%;
+    margin-left: (calc: 55%-2em);
+    margin-top: 1.4em;
+}
+
+.downloadbutton:hover {
+    text-shadow: none;
+    color: white;
+    background: #7db588;
+    cursor: pointer;
+}
+
+.downloadbutton:active {
+    text-shadow: none;
+    color: white;
+    background: #00d66c;
+    cursor: progress;
+}
+
+.switch {
+    margin-top: 2.5em;
+    margin-left: -0.3em;
+    padding: 0;
+    width: 31.5%;
+    position: absolute;
+    display: none;
+}
+
+.showDownload {
+    display: flex;
+}
+
 
 /* Header logo transavia */
 
@@ -78,20 +119,18 @@ h1 {
 h2 {
     display: flex;
     margin-left: 0.5em;
+    margin-top: 0.5em;
     width: 100%;
     color: #2800a0;
 }
 
-section:last-of-type > h2 {
-    color: white;
-}
-
 h3 {
+    font-family: "Nexa Bold", sans-serif;
     margin-top: 0.5em;
     display: flex;
-    justify-content: center;
     font-size: 0.8em;
-    color: gray;
+    color: #2800a0;
+    ;
 }
 
 
@@ -109,17 +148,34 @@ section {
 article:nth-child(2),
 article:nth-child(3),
 article:nth-child(4),
-article:nth-child(5) {
-    background-color: white;
+article:nth-child(5),
+article:nth-child(6),
+article:nth-child(7),
+article:nth-child(8) {
+    background-color: #f1f1f1;
     border-radius: 0.4em;
     border: thin solid lightgrey;
-    width: 28%;
+    width: 27%;
     margin: 0.4em;
     margin-top: 0;
     width: calc(50%-10em);
-    position: relative;
+    position: a;
 }
 
+
+}
+article img:focus {
+    box-shadow: inset 2.5em 0 rgba(0, 0, 0, .04), 0 0 0.1em rgba(0, 0, 0, .5);
+}
+article img:hover {
+    opacity: 0.70;
+    transform: scale(1.015);
+}
+article img:active {
+    border-radius: 0;
+    transform: scale(.9, .9);
+    box-shadow: inset -2.5em 0 rgba(0, 0, 0, .04);
+}
 article img {
     width: 100%;
     height: auto;
@@ -127,19 +183,15 @@ article img {
     border-top-left-radius: 0.4em;
     border: none;
 }
-
 section {
     padding: 1em;
 }
-
 section:nth-of-type(2) {
-    background-color: #2800a0;
+    background-color: #efdbc9;
     border-bottom: thin solid lightgrey;
 }
 
-
 /* Footer verhalen mijn downloads + mijn lijst */
-
 article > footer > ul {
     border-bottom-right-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
@@ -153,17 +205,13 @@ article > footer > ul {
     font-family: "Nexa Bold", sans-serif;
     font-size: 0.7em;
 }
-
 li img {
-    position: relative;
     padding: 0.1em;
     width: 0.9em;
     height: auto;
 }
 
-
 /* Transavia info footer */
-
 footer p {
     background-color: whitesmoke;
     display: flex;
@@ -173,91 +221,121 @@ footer p {
     font-size: 0.8em;
     color: #909090;
 }
-
-
-/* schakelaar download BRON:https://codepen.io/thelaazyguy/pen/MvqpPr/?editors=1100*/
-
-
-/* Styling download schakelaar */
-
-input[type="checkbox"] {
-    display: flex;
-    justify-content: flex-start;
-    margin: 0.9em;
-    font-size: 1.9em;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    width: 8em;
-    height: 2em;
-    background: lightgrey;
-    border-radius: 3em;
-    outline: none;
-    transition: all .2s ease-in-out;
-    transform: scale(0.45);
-}
-
-
-
-
-
-/* Achtergond verandert als schakelaar aan is */
-
-input[type="checkbox"]:checked {
-    background: #00d66c;
-}
-
-
-/* Download button */
-
-input[type="checkbox"]:after {
-    position: absolute;
-    content: "Download";
-    padding-top: 0.5em;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
-    font-family: "Nexa Bold", sans-serif;
-    color: gray;
-    height: 1.5em;
-    border-radius: 1em;
-    background: white;
-    transform: scale(0.98);
-    -webkit-transition: all .1s ease-in-out;
-}
-
-
-/* ruimte schakelaar aan */
-
-input[type="checkbox"]:checked:after {
-    left: calc(50% - 1.5em);
-}
-
-/* micro interactie */
-#downloadimg {
-display:none;
-         
- }
-.downloadzien {
-     display:block; 
- }
-button{
+button {
     border-radius: 1em;
     width: 7em;
     height: 2em;
     background-color: white;
-  
     margin-left: 13em;
     background-color: lig;
     font-family: "Nexa Bold", sans-serif;
-    font-size:0.8em;
-    color:grey;
+    font-size: 0.8em;
+    color: grey;
     padding-top: 0.5em;
     padding-left: 0.4em;
     padding-right: 0.4em;
 }
- 
 
-
-   
+/* EERSTE BREAKPOINT */
+@media(min-width:20em) {
+    .switch {
+        margin-top: 3em;
+        margin-left: -0.2em;
+        padding: 0;
+        width: 31%;
+    }
     
+    h3 {
+        justify-content: center;
+        font-size: 1em;
+    }
+    
+    article > footer > ul {
+        font-size: 0.75em;
+    }
+}
 
+/* TWEEDE BREAKPOINT */
+@media(min-width:35em) {
+    .switch {
+        position: absolute;
+        margin-top: 2.5em;
+        margin-left: -0.1em;
+        padding: 0;
+        width: 29%;
+    }
+    
+    h3 {
+        justify-content: flex-start;
+        margin-left: 0.5em;
+        font-size: 1.2em;
+    }
+    
+    article > footer > ul {
+        font-size: 1.2em;
+        justify-content: space-around;
+    }
+    
+    li img {
+        width: 0.75em;
+    }
+}
 
+/* DERDE BREAKPOINT */
+@media(min-width:40em) {
+    .switch {
+        position: absolute;
+        margin-top: 2.5em;
+        margin-left: -0.1em;
+        padding: 0;
+        width: 23%;
+    }
+    
+    h3 {
+        margin-left: 0.5em;
+    }
+    
+    article:nth-child(2),
+    article:nth-child(3),
+    article:nth-child(4),
+    article:nth-child(5),
+    article:nth-child(6),
+    article:nth-child(7),
+    article:nth-child(8) {
+        width: 28%;
+        margin: 0.6em;
+        margin-top: 0;
+        width: calc(50%-10em);
+    }
+}
+
+/* VIERDE BREAKPOINT */
+@media(min-width:47em) {
+    .switch {
+        position: absolute;
+        margin-top: 2em;
+        padding: 0;
+        width: 20%;
+    }
+    
+    article:nth-child(2),
+    article:nth-child(3),
+    article:nth-child(4),
+    article:nth-child(5),
+    article:nth-child(6),
+    article:nth-child(7),
+    article:nth-child(8) {
+        width: 20%;
+        margin: 0.6em;
+        margin-top: 0;
+    }
+    
+    h3 {
+        margin-left: 0.5em;
+        font-size: 1.3em;
+    }
+    
+    li img {
+        width: 0.9em;
+    }
+}

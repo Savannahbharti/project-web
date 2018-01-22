@@ -1,0 +1,14 @@
+header {
+ 
+  display:flex;
+ 
+}
+
+
+header img {
+  transform: translatey(-110%);
+  transition: all .35s;
+}
+.show {
+  transform: translateX(0);
+}

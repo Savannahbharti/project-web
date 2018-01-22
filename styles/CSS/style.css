@@ -1,24 +1,18 @@
-    /* verwijdert witruimte pagina */
-    html {
-        overflow-x: hidden;
-    }
-    
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: "Trebuchet MS", sans-serif;
-    }
+/* verwijdert witruimte pagina */
 
-.toonanimatie{
-    display:none;
+html {
+    overflow-x: hidden;
 }
 
-#animatie{
-    display:block;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", sans-serif;
 }
-}
+
 
 /* Balk navigatie menu*/
+
 header > div {
     position: absolute;
     z-index: -1;
@@ -32,7 +26,9 @@ header > div {
     box-shadow: 0 .3125em .625em 0 rgba(0, 0, 0, .15);
 }
 
+
 /* Header logo transavia */
+
 header img {
     position: absolute;
     top: 0;
@@ -43,7 +39,9 @@ header img {
     width: 7.5em;
 }
 
+
 /* navigatie menu */
+
 nav ul {
     margin-top: 1.3em;
     margin-left: 7em;
@@ -54,55 +52,104 @@ nav ul {
     color: #00d66c;
     width: 100%;
 }
+
 nav a {
     font-family: "Nexa Bold", sans-serif;
     color: #00d66c;
 }
 
+a:hover {
+    opacity: 0.70;
+}
+
+
 /* titel home pagina */
+
 h1 {
-    text-shadow: grey 0.0em 0 1em;
+    text-shadow: 0.03em 0.05em 0.5em black;
     display: flex;
     justify-content: center;
-    margin-top: 0em;
-    margin-bottom: 0em;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 1em;
     font-family: "Nexa Bold", sans-serif;
-    font-size: 3.4em;
+    font-size: 2.5em;
     color: white;
-    background-image: url(Links/achtergrond2%20copy.jpg);
+    background-image: url(Links/achtergrond_def.jpg);
     background-repeat: no-repeat;
-    background-size: 10.8em;
-    height: 4.5em;
+    background-size: 100%;
 }
 
+
 /* H2 Meest bekeken verhalen */
+
 section:first-of-type > h2 {
-    margin-top: 0.1em;
+    margin-top: 1em;
     display: flex;
     justify-content: center;
     color: white;
 }
 
+
 /* Twee meest bekeken verhalen */
+
 section:first-of-type > article {
-    padding: 0.7em;
-    margin: 0.4em;
-    position: relative;
+    display: flex;
+    height: auto;
+    padding: 1em;
+
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: 1.15em;
+    border: solid lightgreen 0.2em;
+
+    width: 20%;
     border-radius: 0.4em;
-    background: white;
-    width: 35%;
+    background-image: url(Links/paranoia.jpg);
+    background-repeat: no-repeat;
+    background-size: 110%;
 }
+
+section:first-of-type > article h3 {
+    margin-top: 3.5em;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0.5em;
+    background-color: #00d66c;
+    color: white;
+}
+
+article > h3:nth-child(1) {}
+
+article h3:nth-child(1) {
+    margin-top: 3.5em;
+    margin-bottom: 0;
+    margin-left: 2em;
+    padding: 0.5em;
+    background-color: #00d66c;
+    color: white;
+}
+
+section:first-of-type > article:hover {
+    opacity: 0.70;
+    cursor: pointer;
+     transform: scale(1.015);
+}
+
+section:first-of-type > article:last-child {
+    background-image: url(Links/ongeluk.jpg);
+}
+
 
 /* achtergrond kleur meest bekeken verhalen */
+
 section:first-of-type {
-    margin-top: 0;
     background-color: #00d66c;
-    ;
-    padding: 1.5em;
 }
 
+
 /* formulier, filteren en sorten */
+
 section > button {
     font-family: "Trebuchet MS", sans-serif;
     font-size: 1em;
@@ -112,40 +159,83 @@ section > button {
     box-shadow: inset 0 -0.1875em 0.0625em #120145;
     border-radius: 3em;
     padding: 0.5em 2em 0.5em 2em;
-    margin-left: 12em;
+    margin-left: 70%;
+    margin: calc(70%-1em);
 }
+
 section > button:hover {
     border-radius: 0;
     box-shadow: none;
     background: #ff3268;
-    margin-left: 0;
     transition: width 3s;
-    width: 1000em;
 }
 
+
 /* filter sorteer + verbergen (aangemaakt class) */
+
 form {
     display: none;
 }
+
 .sortfilteractive {
     display: block;
 }
+
 form {
+    position: relative;
     width: 100%;
     background-color: #ff3268;
     border: 0.05em solid lightgrey;
+    margin-bottom: 5%;
 }
-form >div {
+
+.done {
     display: flex;
-    justify-content: center;
+    position: absolute;
+    display: none;
+    width: 70%;
+    padding: 1em;
+    animation: blink 0.9s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    100% {
+        opacity: 0.6;
+    }
+    300% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    950% {
+        opacity: 1;
+    }
+}
+
+.done {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+form >div {
     border-radius: 0 0 0 0;
     background: beige;
     padding: 1.2em;
+    height: 20%;
+    margin-bottom: 5%;
 }
-div > button {
+
+.donebutton {
     color: white;
     display: flex;
-    justify-content: center;
+    position: relative;
+    margin-top: 1.5em;
+    margin-left: 32%;
     font-family: "Trebuchet MS", sans-serif;
     font-size: 1.3em;
     padding: 0.5em 2em 0.5em 2em;
@@ -155,59 +245,57 @@ div > button {
     margin-bottom: 0.5em;
     background-color: #ff3268;
 }
+
 fieldset {
     margin-top: 1em;
     display: flex;
     justify-content: flex-start;
     border: none;
 }
+
 legend {
     font-family: "Nexa Bold", sans-serif;
     color: white;
     font-size: 1em;
 }
+
 label {
     margin: 0.1em;
     font-size: 0.91em;
     font-family: "Trebuchet MS", sans-serif;
     color: whitesmoke;
 }
+
 input:focus {
     transform: scale(1.01, 1.01);
 }
+
 section a:nth-child(8) {
     margin-bottom: 2em;
     color: gray;
     list-style: none;
 }
 
+
 /* EERSTE BREAKPOINT */
+
 @media(min-width:20em) {
+    h1 {
+        height: 2.3em;
+    }
     /* tussenkoppen */
-    
     h2 {
         display: flex;
         justify-content: center;
-        margin-left: 10%;
         width: 100%;
         font-family: "Nexa Bold", sans-serif;
-        font-size: 2em;
+        font-size: 1.5em;
         color: #00d66c;
     }
-    
     a[href*="html"] {
         font-family: "Nexa Bold", sans-serif;
         text-decoration: none;
     }
-    
-    article h3:nth-child(1) {
-        display: flex;
-        justify-content: center;
-        color: #2800a0;
-        font-size: 1.2em;
-        margin-left: 0.3em;
-    }
-    
     article h3 {
         display: flex;
         justify-content: flex-start;
@@ -218,15 +306,25 @@ section a:nth-child(8) {
         margin-top: 0.5em;
     }
     /* Afbeeldingen bij de verhalen */
-    
     article img {
         width: 100%;
         height: auto;
         border-top-right-radius: 0.5em;
         border-top-left-radius: 0.5em;
     }
+    article img:focus {
+        box-shadow: inset 2.5em 0 rgba(0, 0, 0, .04), 0 0 0.1em rgba(0, 0, 0, .5);
+    }
+    article img:hover {
+        opacity: 0.70;
+        transform: scale(1.015);
+    }
+    article img:active {
+        border-radius: 0;
+        transform: scale(.9, .9);
+        box-shadow: inset -2.5em 0 rgba(0, 0, 0, .04);
+    }
     /* 4 kolommen verhalen */
-    
     article:nth-child(4),
     article:nth-child(5),
     article:nth-child(6),
@@ -237,26 +335,21 @@ section a:nth-child(8) {
         width: 35%;
         margin: 1em;
         width: calc(35%-2em);
-        position: relative;
     }
-    
     article:nth-child(6),
     article:nth-child(7) {
         margin-bottom: 1.5em;
     }
-    
     article:nth-child(5),
     article:nth-child(4) {
         margin-top: 2em;
     }
-    
     section {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
     /* Mijn lijst + download background */
-    
     footer div {
         background-color: #f7f7f7;
         width: 100%;
@@ -265,7 +358,6 @@ section a:nth-child(8) {
         border-bottom-right-radius: 0.5em;
         border-bottom-left-radius: 0.5em;
     }
-    
     article > footer > ul {
         background-color: #00d66c;
         color: white;
@@ -277,7 +369,6 @@ section a:nth-child(8) {
         font-family: "Nexa Bold", sans-serif;
         font-size: 0.9em;
     }
-    
     li img {
         position: relative;
         padding: 0.12em;
@@ -285,14 +376,12 @@ section a:nth-child(8) {
         height: auto;
     }
     /* Mijn lijst + download icoontje */
-    
     div img:first-child {
         margin: 0.5em 0 0 0.5em;
         border-radius: 0;
         width: 20%;
         position: absolute;
     }
-    
     div img:nth-child(2),
     div img:nth-child(2) {
         margin: 0.5em 0 0 5.5em;
@@ -300,8 +389,25 @@ section a:nth-child(8) {
         width: 20%;
         position: relative;
     }
+    div img:first-child:hover {
+        opacity: 0.85;
+        transform: scale(1.2);
+    }
+    div img:nth-child(2):hover {
+        opacity: 0.85;
+        transform: scale(1.2);
+    }
+    div img:nth-child(2):active {
+        border-radius: 0;
+        transform: scale(.9, .9);
+        box-shadow: inset -2.5em 0 rgba(0, 0, 0, .04);
+    }
+    div img:first-child:active {
+        border-radius: 0;
+        transform: scale(.9, .9);
+        box-shadow: inset -2.5em 0 rgba(0, 0, 0, .04);
+    }
     /* Zoekbalk */
-    
     footer > input {
         display: flex;
         margin-left: em;
@@ -312,7 +418,6 @@ section a:nth-child(8) {
         border-radius: 0.9em;
         width: 70%;
     }
-    
     footer > button {
         position: relative;
         margin-left: 80%;
@@ -325,7 +430,6 @@ section a:nth-child(8) {
         height: 4.2em;
         width: 15%;
     }
-    
     footer p {
         background-color: #f7f7f7;
         display: flex;
@@ -335,133 +439,111 @@ section a:nth-child(8) {
         font-size: 0.8em;
         color: #909090;
     }
-    
     section > footer:last-child {
         width: 100%;
         padding: 2em;
         background-color: #f7f7f7;
     }
-    
     p {
         line-height: 1.5em;
         margin-bottom: 1em;
     }
-    
-   
-   
 }
 
+
 /* TWEEDE BREAKPOINT */
+
 @media(min-width:35em) {
     /* titel home pagina */
-    
     h1 {
-        font-size: 3.5em;
-        background-image: url(Links/achtergrond2%20copy.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
+        font-size: 3em;
     }
-    /* Twee meest bekeken verhalen */
-    
-    section:first-of-type > article {
-        padding: 0.7em;
-        width: 43%;
-        margin: 0.4em;
+    h2 {
+        font-size: 2.5em;
     }
-    
-    section > button {
-        margin-left: 25em;
-    }
-    
     form {
         width: 100%;
     }
-    
     article h3:nth-child(1) {
-        font-size: 1.8em;
+        font-size: 1.5em;
+        margin-top: 5%;
+    }
+    article > footer > ul {
+        font-size: 1.2em;
+        justify-content: space-around;
+    }
+    li img {
+        width: 0.75em;
     }
 }
 
+
 /* DERDE BREAKPOINT */
+
 @media(min-width:40em) {
+    .done {
+        height: 5em;
+    }
     h1 {
         font-size: 3.5em;
         background-size: 100%;
     }
-    
-    section > button {
-        margin-left: 26em;
-    }
-    
     article h3:nth-child(1) {
-        display: flex;
-        justify-content: center;
         font-size: 1.8em;
     }
     /* 4 kolommen verhalen */
-    
     article:nth-child(4),
     article:nth-child(5),
     article:nth-child(6),
     article:nth-child(7) {
-        border-radius: 0.5em;
-        border: 0.05em solid lightgrey;
-        border-bottom-width: thin;
         width: 22%;
         margin: 0.5em;
         width: calc(35%-2em);
-        position: relative;
+    }
+    section > button {
+        margin-bottom: 2em;
+    }
+    form > div {
+        margin-top: 1em;
     }
 }
 
+
 /* VIERDE BREAKPOINT */
+
 @media(min-width:47em) {
+    .done {
+        height: 5em;
+    }
     /* titel home pagina */
-    
     h1 {
-        font-size: 5em;
-        background-size: 100%;
+        font-size: 4em;
     }
-    /* Twee meest bekeken verhalen */
-    
-    section:first-of-type > article {
-        padding: 0.7em;
-        width: 40%;
-        margin: 0.9em;
+    form > div {
+        margin-top: 3em;
     }
-    
-    section > button {
-        margin-left: 41em;
+}
+
+
+/* VIJFDE BREAKPOINT */
+
+@media(min-width:65em) {
+    .done {
+        height: 5em;
     }
-    
-    article h3:nth-child(1) {
-        font-size: 1.8em;
+    /* titel home pagina */
+    form > div {
+        margin-top: 4em;
     }
-    /* VIERDE BREAKPOINT */
-    
-    @media(min-width:68em) {
-        /* titel home pagina */
-        h1 {
-            margin-top: 0;
-            padding-left: 2em;
-            font-size: 6em;
-            background-size: 100%;
-        }
-        /* Twee meest bekeken verhalen */
-        section:first-of-type > article {
-            padding: 0.7em;
-            width: 30%;
-            margin: 0.9em;
-        }
-        section > button {
-            margin-left: 61em;
-        }
-        article h3:nth-child(1) {
-            justify-content: center;
-            font-size: 2.5em;
-        }
-        article h3 {
-            justify-content: flex-start;
-            font-size: 1.5em;
-        }
+    h1 {
+        margin-top: 0;
+        padding-left: 2em;
+        font-size: 6em;
     }
+    li img {
+        width: 0.9em;
+    }
+    form > div {
+        margin-top: 8em;
+    }
+}

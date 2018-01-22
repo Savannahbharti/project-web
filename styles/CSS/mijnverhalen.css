@@ -132,9 +132,10 @@ p {
         list-style: none;
         color: dimgray;
     }
-    form:valid {
-        background-color: rgba(255, 255, 255, 0.87);
-    }
+   form:valid {
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
     legend {
         display: flex;
         justify-content: flex-start;
@@ -172,7 +173,8 @@ p {
         background: #ff3268;
     }
     input:focus {
-        transform: scale(1.01, 1.09);
+        transform: scale(1.05);
+        background-color: #f1f1f1;
     }
     /* Aanmeld button */
     form a:nth-child(2) {
@@ -187,6 +189,9 @@ p {
         padding: 0.5em 2em 0.5em 2em;
         margin-top: 19em;
         margin-left: 8em;
+    }
+    form a:nth-child(2):hover {
+        opacity: 0.67;
     }
 }
 
@@ -270,3 +275,19 @@ p {
         background-size: 80em;
     }
 }
+
+    /* EERSTE BREAKPOINT */
+    
+@media(min-width:20em) {}
+
+    /* TWEEDE BREAKPOINT */
+    
+@media(min-width:35em) {}
+
+  /* DERDE BREAKPOINT */
+    
+@media(min-width:40em) {}
+
+    /* VIERDE BREAKPOINT */
+    
+@media(min-width:47em) {}
